@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владимир Лось](https://up.htmlacademy.ru/htmlcss/27/user/271449).
-* Наставник: `Александр Калинин`(https://htmlacademy.ru/profile/id918955).
+* Наставник: [Александр Калинин](https://htmlacademy.ru/profile/id918955).
 
 ---
 
