@@ -21,14 +21,81 @@
       </nav>
 
       <h2 class="visually-hidden">Фильтр отелей</h2>
-      <!-- ФИЛЬТР -->    
+
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul class="infrastructure">
+            <li>
+               <input type="checkbox" name="pool" checked id="pool" checked><label for="pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="parking"><label for="parking">Парковка</label>
+            </li>
+            <li>
+               <input type="checkbox" name="wifi" id="wifi"><label for="wifi">Wi-FI</label>
+            </li>
+           </ul>
+        </fiedlset>    
+
+        <fieldset>
+          <legend>Тип Жилья:</legend>
+          <ul class="category">
+            <li>
+              <input type="checkbox" name="hotel" id="hotel" checked><label for="hotel">Отель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="motel" checked><label for="motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="apartments"  checked><label for="apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset> 
+          <legend>Стоимость в сутки(р):</legend>
+          <div>От 0 до 3000</div>
+          <input type="ragne" name="cost-per-day" id="cost-per-day" min="0" max="3000" step="100">
+
+          <!-- Двойной ползунок без js не сделать? -->
+          
+        </fieldset>
+        <input type="submit" name="show-results" value="Показать">
+      </form>
     </header>           
 
     <main>      
-      <section>
-        <h2 class="visually-hidden">Результаты поиска</h2>
+      <div>
+        <h2 class="results-of-search">Критерии поиска</h2>
 
-        <article>          
+        <span class="results-of-search">Найдено: 3</span>
+        <legend>Сортировка</legend>
+        <ul class="types-of-seach">
+          <li class="price"> 
+            <input type="radio" name="type-of-search" id="price"><label for="price">По цене</label>
+          </li>
+          <li class="category">
+            <input type="radio" name="type-of-search" id="category"><label for="category">По типу</label>
+          </li>
+          <li class="rating">
+            <input type="radio" name="type-of-search" id="rating"><label for="rating">По рейтингу</label>
+          </li>
+        </ul>        
+
+          <button type="button" name="Up">
+            <img src="img/icon-up-dir.svg" width="11" height="10" alt="Вверх">
+          </button>
+          
+          <button type="button" name="down">  
+            <img src="img/icon-down-dir.svg" width="11" height="10" alt="Вниз">
+          </button>
+      </div>
+
+      <section>
+        <h2 class="visually-hidden">Подходящие варианты</h2>
+
+        <article>   
           <h2>AMANDA RESORT & SPA
             <img src="img/star.svg" widht="18" height="17" alt="5 звезд">
           </h2>      
@@ -37,7 +104,7 @@
           </div>
           <p>
             <span class="category">Гостиница</span>
-            От 4000 Р.
+            <span class="price">От 4000 Р.</span>
           </p>
           <div>
             <a class="button" href="#">Подробнее</a>
@@ -55,7 +122,7 @@
           </div>
           <p>
             <span class="category">Мотель</span>
-            От 3000 Р.
+            <span class="price">От 3000 Р.</class>
           </p>
           <div>
             <a class="button" href="#">Подробнее</a>
@@ -73,7 +140,7 @@
           </div> 
           <p>
             <span class="category">Апартаменты</span>
-            От 2000 Р.
+            <span class="price">От 2000 Р.<span>
           </p>
           <div>
             <a class="button" href="#">Подробнее</a>

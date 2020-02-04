@@ -111,33 +111,31 @@
             
         <form action="https://echo.htmlacademy.ru" method="post">
           <button type="button">Поиск гостиници в Седоне</button>
-          <p>
-            <label for="date_in">
+          <fieldset>
+            <label for="date-in">
               Дата Заезда
-              <input type="date" name="Дата Заезда" id="date_in" required>
+              <input type="date" name="date-in" id="date-in" required>
               <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
             </label>
-          </p>
-          <p>
-            <label for="date_out">
+          </fieldset>
+          <fieldset>
+            <label for="date-out">
               Дата Выезда
-              <input type="date" name="Дата Выезда" id="date_out" required>
+              <input type="date" name="date-out" id="date-out" required>
               <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
             </label>
-          </p>
-          <p>
-            <label for="amount_of_adults">
+          </fieldset>
+          <fieldset>
+            <label for="amount-of-adults">
               Взрослые
-              <input type="number" name="Количество взрослых" id="amount_of_adults" min="0" max="99" step="1">
+              <input type="number" name="amount-of-adults" id="amount_of_adults" min="0" max="99" step="1">
             </label>
-            <label for="amount_of_children">
+            <label for="amount-of-children">
                 Дети
-              <input type="number" name="Количество детей" id="amount_of_children" min="0" max="99" step="1">  
+              <input type="number" name="amount-of-children" id="amount-of-children" min="0" max="99" step="1">  
             </label>
-          </p>
-          </p>
-            <input type="submit" name="Поиск" value="Найти">
-          </p>
+          </fieldset>        
+            <input type="submit" name="Search" value="Найти">        
         </form>       
       </section>
 
