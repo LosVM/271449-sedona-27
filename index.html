@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>    
-    <header class="background-main">
-    
-      <!-- <img src="img/background-photo.jpg" width="1200" height="800" alt="Фон"> -->
-      <!-- <div style="background-image: url(img/background-photo)"> -->
-      <nav>
+    <header class="background-main">    
+      <nav class="navigation">
         <ul class="breadcrumbs">
           <li><a href="info.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
@@ -23,14 +23,15 @@
         </ul>        
       </nav>   
       
-      <div>
+      <div class="welcome-picture">
         <img src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona">
       </div>
-      <div>
+
+      <div class="intro-mask">
         <img src="img/polygon.png" width="1200" height="59">
       </div>
 
-      <div>
+      <div class="intro-section">
         <p>
           Седона - небольшой городок в Аризоне, заслуживающий большего!
         </p>        
@@ -42,10 +43,10 @@
       <h1 class="visually-hidden">Сервис для поиска жилья в Седоне</h1>   
          
       <section>        
-        <ul>
+        <ul class="features-list">
           <li>
-            <div>
-              <h2>Настоящий городок</h2>              
+            <div class="feature-background">
+              <h3>Настоящий городок</h3>              
               <p>Седона - не аттракцион для туристов, там течет своя жизнь.</p>
             </div>
             <div class="image-1">
@@ -54,7 +55,7 @@
           </li>
 
           <li>      
-            <h2 class="visually-hidden">Преимущества</h2>
+            <h3 class="visually-hidden icons-group">Преимущества</h3>
             <div class="house-icon">  
               <img src="img/house-icon.svg" width="75" height="72" alt="Иконка домика">
             </div>
@@ -67,7 +68,7 @@
               <img src="img/burger-icon.svg" width="74" height="70" alt="Иконка бургера">
             </div>
             <div>
-              <h3>Еда</h3>
+              <h2>Еда</h2>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
             
@@ -84,8 +85,8 @@
             <div class="picture-2">
               <img src="img/picture-2.jpg" width="800" height="256" alt="Мост Дьявола">
             </div>
-            <div>
-              <h2>Там есть мост Дьявол</h2>              
+            <div class="feature-background">
+              <h3>Там есть мост Дьявол</h3>              
               <p>Да, но нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </li>
@@ -105,11 +106,11 @@
         </ul>
       </section>
 
-      <section>
+      <section class="form-background">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post" class="search-form">
           <button type="button">Поиск гостиници в Седоне</button>
           <fieldset>
             <label for="date-in">
@@ -128,7 +129,7 @@
           <fieldset>
             <label for="amount-of-adults">
               Взрослые
-              <input type="number" name="amount-of-adults" id="amount_of_adults" min="0" max="99" step="1">
+              <input type="number" name="amount-of-adults" id="amount-of-adults" min="0" max="99" step="1">
             </label>
             <label for="amount-of-children">
                 Дети
@@ -139,7 +140,9 @@
         </form>       
       </section>
 
-      <img src="img/map.jpg" width="1200" height="594" alt="Карта"> 
+      <div class="map">
+        <img src="img/map.jpg" width="1200" height="594" alt="Карта"> 
+      </div>
 
     </main>
 
@@ -147,7 +150,7 @@
        <a href="hotels.html">#VISITSEDONIA</a>
        <a href: tel:+74956660266>Тел: +7 (495) 666-02-66</a> 
 
-      <ul>
+      <ul class="footer-social">
         <li>
           <a href="twitter.com/sedona"> 
            <img src="img/twitter.svg" width="17" height="15" alt="Twitter Icon">
