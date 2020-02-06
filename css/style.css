@@ -12,6 +12,8 @@ a {
 
 .background-main {
     background-image: url("img/background-photo.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
     /* background-image: url('img/background-photo.jpg'); */
 }
 
