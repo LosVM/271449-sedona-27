@@ -11,8 +11,8 @@ a {
 }
 
 .background-main {
-    /* background-image: url("img/background-photo.jpg"); */
-    background-image: url('img/background-photo.jpg');
+    background-image: url("img/background-photo.jpg");
+    /* background-image: url('img/background-photo.jpg'); */
 }
 
 .visually-hidden {
