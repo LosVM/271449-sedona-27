@@ -10,8 +10,8 @@ a {
     text-decoration: none;    
 }
 
-.background-main {
-    background-image: url("img/background-photo.jpg");
+.background-main { 
+    /* background-image: url("img/background-photo.jpg"); */
     background-position: top center;
     background-repeat: no-repeat;
     /* background-image: url('img/background-photo.jpg'); */
@@ -68,6 +68,15 @@ a {
     line-height: 14px;
 }
 
+ol li:nth-child(2) {
+    list-style: none;
+}
+
+/* ol li:nth-child(3) { */
+    list-style: 
+} 
+
+
 .features-list {
    text-align: center;
    color: #000000;
@@ -123,4 +132,8 @@ input[type="number"] {
 .button {
     background-color: #81b3d2;
     color: #ffffff;
+}
+
+.footer-social ul li {
+    background-color: #81b3d2;
 }
