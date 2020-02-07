@@ -11,10 +11,10 @@ a {
 }
 
 .background-main { 
-    /* background-image: url("img/background-photo.jpg"); */
-    background-position: top center;
+    background-image: url("img/background-main.jpg");
+    /* background-position: top center; */
     background-repeat: no-repeat;
-    /* background-image: url('img/background-photo.jpg'); */
+    
 }
 
 .visually-hidden {
@@ -102,22 +102,6 @@ ol li:nth-child(2) {
     background-color: #ffffff;
 }
 
-footer {
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-}
-
-
-/* .footer-social { 
-    text-align: center;
-}
-*/
-
-.footer-social ul {
-    list-style: none;
-    }
-
 .search-form {
     background-color: #ffffff;
     color: #000000;
@@ -134,6 +118,13 @@ input[type="number"] {
     color: #ffffff;
 }
 
-.footer-social ul li {
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.footer-social li {
     background-color: #81b3d2;
+    list-style: none;
 }
