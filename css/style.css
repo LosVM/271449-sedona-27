@@ -123,15 +123,13 @@ ol li:nth-child(2) {
 }
 
 .brown-button {
-    color: #766357;
-    }
-
-.brown-button span {
+    background-color: #766357;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color: #ffffff;
-}
+    }
+
 .search-form {
     background-color: #ffffff;
     color: #000000;
