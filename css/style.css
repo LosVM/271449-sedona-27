@@ -10,14 +10,14 @@ a {
     text-decoration: none;    
 }
 
-/* .background-main {  
+ /* .background-main {   
     background-image: url("img/background-main.jpg");   
     }
 
 */
 
 header {
-    background-image: ulr("img/background-main.jpg");
+    background-image: url("img/background-main.jpg");
 }
 
 .visually-hidden {
