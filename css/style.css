@@ -10,11 +10,14 @@ a {
     text-decoration: none;    
 }
 
-.background-main { 
-    background-image: url("img/background-main.jpg");
-    /* background-position: top center; */
-    background-repeat: no-repeat;
-    
+/* .background-main {  
+    background-image: url("img/background-main.jpg");   
+    }
+
+*/
+
+header {
+    background-image: ulr("img/background-main.jpg");
 }
 
 .visually-hidden {
@@ -72,10 +75,11 @@ ol li:nth-child(2) {
     list-style: none;
 }
 
-/* ol li:nth-child(3) { */
+
+/* ol li:nth-child(3) { 
     list-style: 
 } 
-
+*/
 
 .features-list {
    text-align: center;
@@ -93,12 +97,12 @@ ol li:nth-child(2) {
     line-height: 21px;
 }
 
-.feature-background {
+.feature-main {
     background-color: #81b3d2;   
     color: #ffffff;
 }
 
-.form-background {
+.form-main {
     background-color: #ffffff;
 }
 
