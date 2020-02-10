@@ -12,7 +12,7 @@ body {
 */
 
 header {
-    background-image: url("img/background-main.jpg");
+    background-image: url("/img/mountain-main.jpg");
 }
 
 /*  
@@ -49,11 +49,11 @@ a {
 }
 
 .welcome-picture {
-    background-image: url("img/welcome.png");    
+    background-image: url("/img/welcome.png");    
 }
 
 .intro-mask {
-    background-image: url("img/polygon.png");
+    background-image: url("/img/polygon.png");
 }
 
 .intro-section {
