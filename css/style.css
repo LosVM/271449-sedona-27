@@ -12,8 +12,16 @@ body {
 */
 
 header {
-    background-image: url("/img/mountain-main.jpg");
+    background-image: url("/img/background-main.jpg");    
 }
+
+.welcome-picture {
+    background-image: url("/img/welcome.png");    
+}
+
+.intro-mask {
+    background-image: url("/img/polygon.png");
+    }
 
 /*  
 .background-filter {
@@ -46,14 +54,6 @@ a {
 
 .navigation ul {
     list-style: none;
-}
-
-.welcome-picture {
-    background-image: url("/img/welcome.png");    
-}
-
-.intro-mask {
-    background-image: url("/img/polygon.png");
 }
 
 .intro-section {
