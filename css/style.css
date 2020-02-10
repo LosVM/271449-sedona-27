@@ -1,0 +1,158 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    
+    font-family: 'PT Sans', "sans-serif";
+    text-transform: uppercase;
+}
+
+ /* .background-main {   
+    background-image: url("img/background-main.jpg");   
+    }
+*/
+
+header {
+    background-image: url("img/background-main.jpg");
+}
+
+/*  
+.background-filter {
+    background-image: url(img/filter-background.jpg);    
+}
+*/
+
+a {
+    text-decoration: none;    
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    padding: 0;
+}
+    
+.navigation {
+    font-size: 14px;
+    line-height:  26px;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;    
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.welcome-picture {
+    background-image: url("img/welcome.png");    
+}
+
+.intro-mask {
+    background-image: url("img/polygon.png");
+}
+
+.intro-section {
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.intro-section p {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+   }
+
+.intro-section span {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+ol li:nth-child(2) {
+    list-style: none;
+    }
+
+
+/* ol li:nth-child(3) { 
+    list-style: 
+} 
+*/
+
+.features-list {
+   text-align: center;
+   color: #000000;
+}
+
+.features-list h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.features-list p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.feature-main {
+    background-color: #81b3d2;   
+    color: #ffffff;
+}
+
+.form-main {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.form-main p {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.form-main span {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.brown-button {
+    background-color: #766357;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    }
+
+.search-form {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+input[type="date"],
+input[type="number"] {
+    background-color: #f2f2f2; 
+    color: #000000;
+}
+
+.blue-button {
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.footer-social li {
+    background-color: #81b3d2;
+    list-style: none;
+}

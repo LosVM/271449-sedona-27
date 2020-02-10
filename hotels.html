@@ -5,7 +5,7 @@
     <title>Седона</title>
   </head>
   <body>    
-    <header class="background-hotels">            
+    <header class="background-filter">            
       <nav>
         <ul class="breadcrumbs">
           <li><a href="info.html">Информация</a></li>
@@ -20,24 +20,110 @@
         </ul>        
       </nav>
 
-      <h2 class="visually-hidden">Фильтр отелей</h2>
-      <!-- ФИЛЬТР -->    
+      <h1 class="visually-hidden">Фильтр отелей в городе Седона</h1>
+
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul class="infrastructure">
+            <li>
+              <label>
+                <input type="checkbox" name="pool" checked>Бассейн
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="parking">Парковка
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="wifi">Wi-FI
+              </label>
+            </li>
+           </ul>
+        </fieldset>    
+
+        <fieldset>
+          <legend>Тип Жилья:</legend>
+          <ul class="category">
+            <li>
+              <label>
+                <input type="checkbox" name="hotel" checked>Отель
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="motel" checked>Мотель
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="apartments" checked>Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset> 
+          <legend>Стоимость в сутки(р):</legend>
+          <div>От 0 до 3000</div>
+          <input type="range" name="cost-per-day" id="cost-per-day" min="0" max="3000" step="100">
+
+          <!-- Двойной ползунок без js не сделать? -->
+
+        </fieldset>
+        <button type="button" class="results">
+        </button>
+      </form>
     </header>           
 
     <main>      
-      <section>
-        <h2 class="visually-hidden">Результаты поиска</h2>
+      <div>
+        <h2 class="visually-hidden">Критерии поиска</h2>
 
-        <article>          
+        <span class="results-of-search">Найдено: 3</span>
+        <legend>Сортировка</legend>
+        <ul class="types-of-seach">
+          <li> 
+            <label>
+              <input type="radio" name="type-of-search">По цене
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="type-of-search">По типу
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="type-of-search">По рейтингу
+            </label>
+          </li>
+        </ul>        
+
+          <button type="button" class="filter-up">
+            <img src="img/icon-up-dir.svg" width="11" height="10" alt="Вверх">
+          </button>
+          
+          <button type="button" class="filter-down">  
+            <img src="img/icon-down-dir.svg" width="11" height="10" alt="Вниз">
+          </button>
+      </div>
+
+      <section>
+        <h2 class="visually-hidden">Подходящие варианты</h2>
+
+        <article>   
           <h2>AMANDA RESORT & SPA
             <img src="img/star.svg" widht="18" height="17" alt="5 звезд">
           </h2>      
           <div class="amanda-hotel"> 
-            <img src="img/hotel-1.jpg" width="135" height="90" alt="Изображение отеля">
+            <img src="img/article-hotel-image.jpg" width="135" height="90" alt="Изображение отеля">
           </div>
           <p>
             <span class="category">Гостиница</span>
-            От 4000 Р.
+            <span class="price">От 4000 Р.</span>
           </p>
           <div>
             <a class="button" href="#">Подробнее</a>
@@ -51,11 +137,11 @@
             <img src="img/star.svg" widht="18" height="17" alt="3 звезды">
           </h2>
           <div class="desert-hotel">
-            <img src="img/hotel-2.jpg" width="135" height="90" alt="Изображение отеля">
+            <img src="img/article-motel-image.jpg" width="135" height="90" alt="Изображение отеля">
           </div>
           <p>
             <span class="category">Мотель</span>
-            От 3000 Р.
+            <span class="price">От 3000 Р.</class>
           </p>
           <div>
             <a class="button" href="#">Подробнее</a>
@@ -69,11 +155,11 @@
             <img src="img/star.svg" widht="18" height="17" alt="2 звезды">
           </h2>
           <div class="villas"> 
-              <img src="img/hotel-3.jpg" width="135" height="90" alt="Изображение отеля">
+              <img src="img/article-apartments-image.jpg" width="135" height="90" alt="Изображение отеля">
           </div> 
           <p>
             <span class="category">Апартаменты</span>
-            От 2000 Р.
+            <span class="price">От 2000 Р.<span>
           </p>
           <div>
             <a class="button" href="#">Подробнее</a>
