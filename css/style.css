@@ -48,18 +48,22 @@ a {
 }
     
 .navigation {
+    display: flex;
+    justify-content: space-evenly;
+
     font-size: 14px;
     line-height:  26px;
     color: #000000;
     background-color: #ffffff;
-    text-align: center;    
+    text-align: center;   
+    list-style: none; 
 }
 
-.navigation ul {
-    list-style: none;
-}
 
 .intro-section {
+    width: 1200px;
+    height: 216px;
+    margin: 0;
     background-color: #ffffff;
     text-align: center;
     vertical-align: middle;
@@ -72,6 +76,7 @@ a {
     font-weight: bold;
     text-align: center;
     background-color: #ffffff;
+    
    }
 
 .intro-section span {
@@ -79,7 +84,11 @@ a {
     line-height: 14px;
 }
 
+
+
 .features-list {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     color: #000000;    
  }
@@ -96,21 +105,15 @@ a {
     color: #000000;
  }
 
-.hotel-feature {
-    display: flex;
+ ol li:nth-child(2) {
+    list-style: none;
+    }
+
+.hotel-feature {    
     margin: 0;
-    width: 100%;
+    width: 1200px;
     height: 256px;    
 }
-
-/*
- .hotel-feature h3 { 
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: bold;    
-}
-
-*/
 
 .feature-main {
     margin: 0;
@@ -118,78 +121,123 @@ a {
     color: #ffffff;     
     width: 400px;
     height: 256px; 
+    padding: 46px 60px 64px 60px;
 }
 
 .feature-hotel {
-    width: 100%;
-    height: 100%;
-}
-
-.icons-group {
-    display: flex;
-    margin: 0px;
-    width: 100%;
-    height: 330px;
-}
-
-.house {
-    
-}
-
-.burger {
-
-}
-
-.souvenir {
-
-}
-
-.feature-mountain {
-    display: flex;
-    margin: 0px;
-    width: 100%;
-    height: 256px;
-}
-
-.mountain {
     margin: 0;
     width: 800px;
     height: 256px;
 }
 
-.feature-last {
-    display: flex;
-    margin: 0;
-    background-color: #eeeeee;
+.icons-group {    
+    margin: 0px;
+    width: 1200px;
+    height: 330px;
 }
 
+.house {
+    height: 330px;
+    width: 400px;
+    margin: 0px;
+}
 
-ol li:nth-child(2) {
-    list-style: none;
-    }
+.house-pict {
+    margin: 0;
+    padding: 124px 103px 29px 162px;
+}
 
+.house-description {
+    margin: 0;
+    padding: 0px 133px 85px 73px;
+}
 
-/* ol li:nth-child(3) { 
-    list-style: 
-} 
+/* .house h2 { 
+    margin: 0;
+    padding: 0 168px 31px 165px;
+}
+
 */
 
-
-.features-list h3 {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: bold;
+/*
+ .house p { 
+    margin: 0;
+    padding-bottom: 85px;
 }
 
-.features-list p {
-    font-size: 14px;
-    line-height: 21px;
+*/
+
+.burger {
+    height: 336px;
+    width: 400px;
+    margin: 0px;
 }
 
-.feature-main {
-    background-color: #81b3d2;   
-    color: #ffffff;
+.burger-pict {
+    margin: 0;
+    padding: 62px 163px 32px 163px;
 }
+
+.burger-description {
+    margin: 0px;
+    padding: 0px 58px 87px 58px;
+}
+
+.souvenir {
+    height: 336px;
+    width: 400px;
+    margin: 0px;
+}
+
+.souvenir-pict {
+    margin: 0;
+    padding: 56px 168px 32px 162px;
+}
+
+.souvenir-description {
+    margin: 0;
+    padding: 0px 63px 86px 73px;
+}
+
+.feature-mountain {    
+    margin: 0px;
+    width: 1200px;
+    height: 256px;
+}
+
+.mountain-pict {
+    margin: 0;
+    width: 800px;
+    height: 256px;
+}
+
+.grey-container {
+    width: 1200px;
+    height: 256px;
+    background-color:  #eeeeee;
+}
+
+.feature-territory {
+    margin: 0;
+    width: 400px;
+    height: 256px;
+    padding: 50px 97px 63px 95px;
+}
+
+.feature-road {
+    margin: 0;
+    width: 1200px;
+    height: 256px;
+    padding: 59px 69px 64px 69px;
+}
+
+.feature-tourists {
+    margin: 0;
+    width: 1200px;
+    height: 256px;
+    padding: 50px 77px 64px 77px;
+}
+
 
 .form-main {
     background-color: #ffffff;
