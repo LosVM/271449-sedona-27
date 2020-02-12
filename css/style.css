@@ -12,7 +12,10 @@ body {
 */
 
 header {
-    background-image: url("/img/background-main.jpg");    
+    background-image: url("/img/background-main.jpg");
+    background-size: 1200px auto;
+    background-position: top center;
+    background-repeat: no-repeat;    
 }
 
 .welcome-picture {
@@ -67,12 +70,99 @@ a {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    text-align: center;
+    background-color: #ffffff;
    }
 
 .intro-section span {
     font-size: 14px;
     line-height: 14px;
 }
+
+.features-list {
+    text-align: center;
+    color: #000000;    
+ }
+
+ .features-list h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;  
+ }
+
+ .feature-list p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+ }
+
+.hotel-feature {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 256px;    
+}
+
+/*
+ .hotel-feature h3 { 
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;    
+}
+
+*/
+
+.feature-main {
+    margin: 0;
+    background-color: #81b3d2;
+    color: #ffffff;     
+    width: 400px;
+    height: 256px; 
+}
+
+.feature-hotel {
+    width: 100%;
+    height: 100%;
+}
+
+.icons-group {
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    height: 330px;
+}
+
+.house {
+    
+}
+
+.burger {
+
+}
+
+.souvenir {
+
+}
+
+.feature-mountain {
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    height: 256px;
+}
+
+.mountain {
+    margin: 0;
+    width: 800px;
+    height: 256px;
+}
+
+.feature-last {
+    display: flex;
+    margin: 0;
+    background-color: #eeeeee;
+}
+
 
 ol li:nth-child(2) {
     list-style: none;
@@ -84,10 +174,6 @@ ol li:nth-child(2) {
 } 
 */
 
-.features-list {
-   text-align: center;
-   color: #000000;
-}
 
 .features-list h3 {
     font-size: 21px;
