@@ -113,7 +113,8 @@ a {
     list-style: none;
     }
 
-.hotel-feature {    
+.hotel-feature { 
+    display: flex;   
     margin: 0;
     width: 1200px;
     height: 256px;    
@@ -135,14 +136,15 @@ a {
     height: 256px;
 }
 
-.icons-group {    
+.icons-group {  
+    display: flex;  
     margin: 0px;
     width: 1200px;
-    height: 330px;
+    height: 336px;
 }
 
 .house {
-    height: 330px;
+    height: 336px;
     width: 400px;
     margin: 0px;
 }
@@ -211,6 +213,7 @@ a {
 }
 
 .feature-mountain {    
+    display: flex;
     margin: 0px;
     width: 1200px;
     height: 256px;
@@ -222,38 +225,36 @@ a {
     height: 256px;
 }
 
-/* .grey-container { 
+ .grey-container { 
+    display: flex;
     width: 1200px;
     height: 256px;
     background-color:  #eeeeee;
 }
 
- */
+ 
 
 .feature-territory {
     margin: 0;
     width: 400px;
     height: 256px;
-    padding: 50px 97px 63px 95px;
-    background-color:  #eeeeee;
+    padding: 50px 97px 63px 95px;    
     box-sizing: border-box;
 }
 
 .feature-road {
     margin: 0;
-    width: 1200px;
+    width: 400px;
     height: 256px;
-    padding: 59px 69px 64px 69px;
-    background-color:  #eeeeee;
+    padding: 59px 69px 64px 69px;    
     box-sizing: border-box;
 }
 
 .feature-tourists {
     margin: 0;
-    width: 1200px;
+    width: 400px;
     height: 256px;
-    padding: 50px 77px 64px 77px;
-    background-color:  #eeeeee;
+    padding: 50px 77px 64px 77px;    
     box-sizing: border-box;
 }
 
@@ -299,13 +300,34 @@ input[type="number"] {
     color: #ffffff;
 }
 
-footer {
+.footer-main {
+    margin: 0;
+    width: 967px;
+    height: 120px;
+
+    display: flex;
+    
     background-color: #ffffff;
     color: #000000;
     text-align: center;
 }
 
+.footer-contacts {
+    width: 223px;
+    height: 120px;
+    margin-right: 169px;
+}
+
 .footer-social li {
+    width: 154px;
+    height: 120px;
+    margin-right: 228px;
     background-color: #81b3d2;
     list-style: none;
+}
+
+.footer-devs {
+    width: 196px;
+    height: 120px;
+
 }
