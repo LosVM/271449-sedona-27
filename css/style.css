@@ -49,7 +49,9 @@ a {
     
 .navigation {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
 
     font-size: 14px;
     line-height:  26px;
@@ -89,6 +91,8 @@ a {
 .features-list {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
     text-align: center;
     color: #000000;    
  }
@@ -122,6 +126,7 @@ a {
     width: 400px;
     height: 256px; 
     padding: 46px 60px 64px 60px;
+    box-sizing: border-box;
 }
 
 .feature-hotel {
@@ -145,11 +150,13 @@ a {
 .house-pict {
     margin: 0;
     padding: 124px 103px 29px 162px;
+    box-sizing: border-box;
 }
 
 .house-description {
     margin: 0;
     padding: 0px 133px 85px 73px;
+    box-sizing: border-box;
 }
 
 /* .house h2 { 
@@ -176,11 +183,13 @@ a {
 .burger-pict {
     margin: 0;
     padding: 62px 163px 32px 163px;
+    box-sizing: border-box;
 }
 
 .burger-description {
     margin: 0px;
     padding: 0px 58px 87px 58px;
+    box-sizing: border-box;
 }
 
 .souvenir {
@@ -192,11 +201,13 @@ a {
 .souvenir-pict {
     margin: 0;
     padding: 56px 168px 32px 162px;
+    box-sizing: border-box;
 }
 
 .souvenir-description {
     margin: 0;
     padding: 0px 63px 86px 73px;
+    box-sizing: border-box;
 }
 
 .feature-mountain {    
@@ -211,17 +222,21 @@ a {
     height: 256px;
 }
 
-.grey-container {
+/* .grey-container { 
     width: 1200px;
     height: 256px;
     background-color:  #eeeeee;
 }
+
+ */
 
 .feature-territory {
     margin: 0;
     width: 400px;
     height: 256px;
     padding: 50px 97px 63px 95px;
+    background-color:  #eeeeee;
+    box-sizing: border-box;
 }
 
 .feature-road {
@@ -229,6 +244,8 @@ a {
     width: 1200px;
     height: 256px;
     padding: 59px 69px 64px 69px;
+    background-color:  #eeeeee;
+    box-sizing: border-box;
 }
 
 .feature-tourists {
@@ -236,6 +253,8 @@ a {
     width: 1200px;
     height: 256px;
     padding: 50px 77px 64px 77px;
+    background-color:  #eeeeee;
+    box-sizing: border-box;
 }
 
 
