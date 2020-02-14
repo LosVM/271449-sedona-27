@@ -51,7 +51,7 @@ a {
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    height: 60px;
+    min-height: 60px;
 
     font-size: 14px;
     line-height:  26px;
@@ -64,7 +64,7 @@ a {
 
 .intro-section {
     width: 1200px;
-    height: 216px;
+    min-height: 216px;
     margin: 0;
     background-color: #ffffff;
     text-align: center;
@@ -117,7 +117,7 @@ a {
     display: flex;   
     margin: 0;
     width: 1200px;
-    height: 256px;    
+    min-height: 256px;    
 }
 
 .feature-main {
@@ -125,7 +125,7 @@ a {
     background-color: #81b3d2;
     color: #ffffff;     
     width: 400px;
-    height: 256px; 
+    min-height: 256px; 
     padding: 46px 60px 64px 60px;
     box-sizing: border-box;
 }
@@ -133,31 +133,31 @@ a {
 .feature-hotel {
     margin: 0;
     width: 800px;
-    height: 256px;
+    min-height: 256px;
 }
 
 .icons-group {  
     display: flex;  
     margin: 0px;
     width: 1200px;
-    height: 336px;
+    min-height: 336px;
 }
 
 .house {
-    height: 336px;
+    min-height: 336px;
     width: 400px;
     margin: 0px;
 }
 
 .house-pict {
     margin: 0;
-    padding: 124px 103px 29px 162px;
+    padding: 62px 163px 29px 162px;
     box-sizing: border-box;
 }
 
 .house-description {
     margin: 0;
-    padding: 0px 133px 85px 73px;
+    padding: 0px 75px 85px 73px;
     box-sizing: border-box;
 }
 
@@ -177,7 +177,7 @@ a {
 */
 
 .burger {
-    height: 336px;
+    min-height: 336px;
     width: 400px;
     margin: 0px;
 }
@@ -195,7 +195,7 @@ a {
 }
 
 .souvenir {
-    height: 336px;
+    min-height: 336px;
     width: 400px;
     margin: 0px;
 }
@@ -216,19 +216,19 @@ a {
     display: flex;
     margin: 0px;
     width: 1200px;
-    height: 256px;
+    min-height: 256px;
 }
 
 .mountain-pict {
     margin: 0;
     width: 800px;
-    height: 256px;
+    min-height: 256px;
 }
 
  .grey-container { 
     display: flex;
     width: 1200px;
-    height: 256px;
+    min-height: 256px;
     background-color:  #eeeeee;
 }
 
@@ -237,7 +237,7 @@ a {
 .feature-territory {
     margin: 0;
     width: 400px;
-    height: 256px;
+    min-height: 256px;
     padding: 50px 97px 63px 95px;    
     box-sizing: border-box;
 }
@@ -245,7 +245,7 @@ a {
 .feature-road {
     margin: 0;
     width: 400px;
-    height: 256px;
+    min-height: 256px;
     padding: 59px 69px 64px 69px;    
     box-sizing: border-box;
 }
@@ -253,7 +253,7 @@ a {
 .feature-tourists {
     margin: 0;
     width: 400px;
-    height: 256px;
+    min-height: 256px;
     padding: 50px 77px 64px 77px;    
     box-sizing: border-box;
 }
@@ -303,7 +303,7 @@ input[type="number"] {
 .footer-main {
     margin: 0;
     width: 967px;
-    height: 120px;
+    min-height: 120px;
 
     display: flex;
     
@@ -314,13 +314,13 @@ input[type="number"] {
 
 .footer-contacts {
     width: 223px;
-    height: 120px;
+    min-height: 120px;
     margin-right: 169px;
 }
 
 .footer-social li {
     width: 154px;
-    height: 120px;
+    min-height: 120px;
     margin-right: 228px;
     background-color: #81b3d2;
     list-style: none;
@@ -328,6 +328,48 @@ input[type="number"] {
 
 .footer-devs {
     width: 196px;
-    height: 120px;
+    min-height: 120px;
 
+}
+
+/* Hotels page */
+
+.form-hotels {
+    min-height: 217px;
+    width: 1200px;
+
+    background-color: #000000;
+    color: #ffffff;
+
+    display: flex;
+    list-style: none;
+}
+
+.form-hotels legend {    
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.form-hotels label {    
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.infrastructure-filter {
+    width: 139px;
+    margin: 31px 115px 31px 72px;
+}
+
+.category-filter {
+    width: 400px;
+    padding: 0;
+    margin: 87px 0px 31px 0px;    
+}
+
+.cost-perday {
+    width: 1008px;
+    padding: 0;
+    margin: 87px 74px 35px auto;
 }

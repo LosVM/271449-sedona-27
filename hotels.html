@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>    
     <header class="background-filter">            
       <nav>
-        <ul class="breadcrumbs">
+        <ul class="navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
           <li>
@@ -22,60 +25,63 @@
 
       <h1 class="visually-hidden">Фильтр отелей в городе Седона</h1>
 
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
-          <legend>Инфраструктура:</legend>
-          <ul class="infrastructure">
-            <li>
-              <label>
-                <input type="checkbox" name="pool" checked>Бассейн
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="parking">Парковка
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="wifi">Wi-FI
-              </label>
-            </li>
-           </ul>
-        </fieldset>    
+      <div class="form-hotels">
 
-        <fieldset>
-          <legend>Тип Жилья:</legend>
-          <ul class="category">
-            <li>
-              <label>
-                <input type="checkbox" name="hotel" checked>Отель
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="motel" checked>Мотель
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="apartments" checked>Апартаменты
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <form action="https://echo.htmlacademy.ru" method="get">
+         <fieldset class="infrastructure-filter">
+           <legend>Инфраструктура:</legend>
+           <ul>
+             <li>
+               <label>
+                  <input type="checkbox" name="pool" checked>Бассейн
+               </label>
+             </li>
+              <li>
+               <label>
+                 <input type="checkbox" name="parking">Парковка
+               </label>
+              </li>
+              <li>
+               <label>
+                 <input type="checkbox" name="wifi">Wi-FI
+               </label>
+             </li>
+            </ul>
+         </fieldset>    
 
-        <fieldset> 
-          <legend>Стоимость в сутки(р):</legend>
-          <div>От 0 до 3000</div>
-          <input type="range" name="cost-per-day" id="cost-per-day" min="0" max="3000" step="100">
+         <fieldset class="category-filter">
+           <legend>Тип Жилья:</legend>
+           <ul>
+             <li>
+               <label>
+                 <input type="checkbox" name="hotel" checked>Отель
+               </label>
+             </li>
+              <li>
+                <label>
+                 <input type="checkbox" name="motel" checked>Мотель
+               </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="apartments" checked>Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-          <!-- Двойной ползунок без js не сделать? -->
+          <fieldset class="cost-perday"> 
+            <legend>Стоимость в сутки(р):</legend>
+           <div>От 0 до 3000</div>
+           <input type="range" name="cost-per-day" id="cost-per-day" min="0" max="3000" step="100">
 
-        </fieldset>
-        <button type="button" class="results">
-        </button>
-      </form>
+             <!-- Двойной ползунок без js не сделать? -->
+
+          </fieldset>
+          <button type="button" class="results">
+          </button>
+        </form>
+      </div>
     </header>           
 
     <main>      
