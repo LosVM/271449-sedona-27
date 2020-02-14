@@ -361,7 +361,9 @@ input[type="number"] {
 
 .infrastructure-filter {
     width: 139px;
-    margin: 31px 115px 31px 72px;
+    /* margin: 31px 115px 31px 72px; */
+    margin: 0;
+    padding: 31px 115px 31px 72px;
 }
 
 .category-filter {
