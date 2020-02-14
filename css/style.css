@@ -44,10 +44,11 @@ a {
     
 .navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 1200px;
-    min-height: 60px;
+    height: 56px;
 
+    padding: 0;
     font-size: 14px;
     line-height:  26px;
     font-weight: bold;
@@ -85,7 +86,8 @@ a {
 
 .intro-section p {
     margin: 0;
-    
+    padding: 61px 380px 38px 380px;
+
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -95,6 +97,8 @@ a {
    }
 
 .intro-section span {
+    margin: 0;
+    padding: 0px 356px 56px 355px;
     font-size: 14px;
     line-height: 14px;
 }
@@ -104,8 +108,12 @@ a {
 .features-list {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    /* flex-wrap: wrap; */
+    /* flex-grow: 1; */
+    font-size: 14px;
+
+    line-height: 21px;
+    color: #000000;
     text-align: center;
     color: #000000;    
  }
@@ -272,24 +280,33 @@ a {
 }
 
 
-.form-main {
+.offer {
+    width: 1200px;
+    min-height: 290px;
     background-color: #ffffff;
     text-align: center;
 }
 
-.form-main p {
+.offer h2 {
+    margin: 0;
+    padding: 57px 450px 36px 450px;
     font-size: 30px;
     line-height: 36px;
     font-weight: bold;
     color: #000000;
 }
 
-.form-main span {
+.offer span {
+    margin: 0;
+    padding: 0px 383px 52px 383px;
     font-size: 14px;
     line-height: 24px;
 }
 
 .brown-button {
+    width: 568px;
+    height: 86px;
+
     background-color: #766357;
     font-size: 21px;
     line-height: 26px;
@@ -298,17 +315,54 @@ a {
     }
 
 .search-form {
+    width: 568px;
+    min-height: 395px;
     background-color: #ffffff;
     color: #000000;
 }
 
-input[type="date"],
-input[type="number"] {
+.date-in {
+    margin: 0;
+    padding: 55px 55px 29px 55px;
+}
+
+.date-out {
+    margin: 0;
+    padding: 0px 58px 30px 55px;
+}
+
+input[type="date"] {
+    width: 346px;
+    height: 38px;
     background-color: #f2f2f2; 
     color: #000000;
 }
 
+input[type="number"] {
+    width: 114px;
+    height: 38px;
+}
+
+.amount-of-adults {
+    margin: 0;
+    padding: 30px 53px 54px 55px;
+}
+
+.amount-of-children {
+    margin: 0;
+    padding: 38px 55px 54px 0px;
+}
+
 .blue-button {
+    width: 458px;
+    height: 58px;
+
+    margin: 0;
+    padding: 0px 55px 55px 55px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
     background-color: #81b3d2;
     color: #ffffff;
 }
@@ -408,6 +462,11 @@ input[type="number"] {
     border: none; 
 }
 
+.range-price {
+    display: inline-block;
+    border: 2px solid #ffffff;
+}
+
 .button-show-results {
     width: 133px;
     height: 32px;
@@ -433,7 +492,10 @@ input[type="number"] {
 .results-of-search span {
     margin: 0;
     padding: 41px 40px 37px 0;
-
+    
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
     font-size: 12px;
     line-height: 18px;
     color: #000000;
@@ -441,7 +503,7 @@ input[type="number"] {
 
 .results-of-search ul {
     margin: 0;
-    padding: 41px 504px 41px 40px;
+    padding: 41px 100px 41px 40px;
     width: 694px;
     list-style: none;
 }
@@ -455,8 +517,7 @@ input[type="number"] {
     padding: 39px 73px 37px 0px;
 }
 
-.hotels-container {
-    display: flex;
+.hotels-container {    
     width: 1200px;
     min-height: 453px;
 }

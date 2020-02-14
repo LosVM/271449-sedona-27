@@ -117,32 +117,36 @@
         </ol>
       </section>
 
-      <section class="form-main">
-        <p>Заинтересовались?</p>
+      <section class="offer">
+        <h2>Заинтересовались?</h2>
         <span>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</span>
             
         <form action="https://echo.htmlacademy.ru" method="post" class="search-form">
           <button type="button" class="brown-button"><span>Поиск гостиници в Седоне</span></button>
-          <fieldset>
-            <label for="date-in">
+          
+          <fieldset class="date-in">
+            <label>
               Дата Заезда
               <input type="date" name="date-in" id="date-in" required>
               <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
             </label>
           </fieldset>
-          <fieldset>
-            <label for="date-out">
+
+          <fieldset class="date-out">
+            <label>
               Дата Выезда
               <input type="date" name="date-out" id="date-out" required>
               <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
             </label>
           </fieldset>
-          <fieldset>
-            <label for="amount-of-adults">
+
+          <fieldset class="amount-of-adults">
+            <label>
               Взрослые
               <input type="number" name="amount-of-adults" id="amount-of-adults" min="0" max="99" step="1">
             </label>
-            <label for="amount-of-children">
+            
+            <label class="amount-of-children">
                 Дети
               <input type="number" name="amount-of-children" id="amount-of-children" min="0" max="99" step="1">  
             </label>
