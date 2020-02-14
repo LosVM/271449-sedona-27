@@ -25,12 +25,11 @@
 
       <h1 class="visually-hidden">Фильтр отелей в городе Седона</h1>
 
-      <div class="form-hotels">
+      
 
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get" class="form-hotels">
 
-         <div class="infrastructure-filter">
-           
+          <fieldset class="infrastructure-filter">           
            <legend>Инфраструктура:</legend>
            <ul>
              <li>
@@ -50,7 +49,7 @@
              </li>
             </ul>
             
-          </div>    
+          </fieldset>    
 
          <fieldset class="category-filter">
            <legend>Тип Жилья:</legend>
@@ -81,7 +80,7 @@
              <!-- Двойной ползунок без js не сделать? -->
 
           </fieldset>
-          <button type="button" class="results">
+          <button type="button" class="results">Показать
           </button>
         </form>
       </div>
@@ -92,22 +91,16 @@
         <h2 class="visually-hidden">Критерии поиска</h2>
 
         <span class="results-of-search">Найдено: 3</span>
-        <legend>Сортировка</legend>
-        <ul class="types-of-seach">
-          <li> 
-            <label>
-              <input type="radio" name="type-of-search">По цене
-            </label>
+        <h2>Сортировка</h2>
+        <ul class=breadcrumps>
+          <li>             
+            <a href="#">По цене</a>            
           </li>
-          <li>
-            <label>
-              <input type="radio" name="type-of-search">По типу
-            </label>
+          <li>            
+            <a href="#">По типу</a>            
           </li>
-          <li>
-            <label>
-              <input type="radio" name="type-of-search">По рейтингу
-            </label>
+          <li>            
+             <a href="#">По рейтингу</a>            
           </li>
         </ul>        
 
@@ -120,25 +113,31 @@
           </button>
       </div>
 
-      <section>
+      <section class="hotels-container">
         <h2 class="visually-hidden">Подходящие варианты</h2>
 
-        <article>   
-          <h2>AMANDA RESORT & SPA
-            <img src="img/star.svg" widht="18" height="17" alt="5 звезд">
-          </h2>      
-          <div class="amanda-hotel"> 
+        <article class="accomodation">   
+
+          <div class="article-picture"> 
             <img src="img/article-hotel.jpg" width="135" height="90" alt="Изображение отеля">
           </div>
-          <p>
-            <span class="category">Гостиница</span>
-            <span class="price">От 4000 Р.</span>
-          </p>
-          <div>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+
+          <div class="article-item-info">
+            <h2>AMANDA RESORT & SPA</h2>     
+          
+            <p>
+              <span class="category hotel">Гостиница</span>
+              <span class="price">От 4000 Р.</span>
+            </p>
+            <div>
+              <a class="button" href="#">Подробнее</a>
+              <a class="button" href="#">Забронировать</a>            
+            </div>              
+          </div>
+          <div class="atrile-value">
+            <img src="img/star.svg" widht="18" height="17" alt="5 звезд">
             <span class="rating">Рейтинг: 8,5</span>         
-          </div>                      
+          </div>
         </article>
 
         <article>
@@ -149,7 +148,7 @@
             <img src="img/article-motel.jpg" width="135" height="90" alt="Изображение отеля">
           </div>
           <p>
-            <span class="category">Мотель</span>
+            <span class="category motel">Мотель</span>
             <span class="price">От 3000 Р.</class>
           </p>
           <div>
@@ -167,7 +166,7 @@
               <img src="img/article-apartments.jpg" width="135" height="90" alt="Изображение отеля">
           </div> 
           <p>
-            <span class="category">Апартаменты</span>
+            <span class="category apartments">Апартаменты</span>
             <span class="price">От 2000 Р.<span>
           </p>
           <div>

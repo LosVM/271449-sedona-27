@@ -13,26 +13,28 @@ body {
 
 header {    
     background-image: url("../img/background-main.jpg");
-    background-size: 1200px auto;
-    background-position: top center;
-    background-repeat: no-repeat;    
+    background-size: 1200px 800px;
+    /* background-position: top center; */
+    /* background-repeat: no-repeat;     */
 }
 
 
 
 .welcome-picture {
-    background-image: url("/img/welcome.png");    
+    background-image: url("../img/welcome.png");    
 }
 
 .intro-mask {
-    background-image: url("/img/polygon.png");
+    background-image: url("../img/polygon.png");
     }
 
-/*  
+
 .background-filter {
-    background-image: url(img/filter-background.jpg);    
+    background-image: url(../img/filter-background.jpg);   
+    width: 1200px;
+    height: auto; 
 }
-*/
+
 
 a {
     text-decoration: none;    
@@ -344,7 +346,7 @@ input[type="number"] {
     color: #ffffff;
 
     display: flex;
-    list-style: none;
+    
 }
 
 .form-hotels legend {    
@@ -368,12 +370,65 @@ input[type="number"] {
 
 .category-filter {
     width: 400px;
-    padding: 0;
-    margin: 87px 0px 31px 0px;    
+    margin: 0;
+    padding: 31px 0px 31px 0px;    
 }
 
 .cost-perday {
     width: 1008px;
-    padding: 0;
-    margin: 87px 74px 35px 50px;
+    margin: 0;
+    padding: 87px 74px 35px 50px;
+}
+
+.results-of-search {
+    min-height: 86px;
+    width: 1200px;
+    list-style: none;
+}
+
+.hotels-container {
+    display: flex;
+    width: 1200px;
+    min-height: 453px;
+}
+
+.hotels-container h2 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.hotels-container p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.accomodation {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #f2f2f2;
+}
+
+.hotel-info {
+    min-height: 151px;
+    width: 1200px;
+}
+
+.article-picture {
+    margin: 0;
+    padding: 30px 30px 30px 72px;
+}
+
+.article-item-info {
+    width: 756px;
+    min-height: 151px;
+    margin: 0;
+    padding: 30px 522px 30px 0px;
+}
+
+.article-value {
+    width: 322px;
+    min-height: 151px;
+    margin: 0;
+    padding: 29px 72px 30px 0px;
 }
