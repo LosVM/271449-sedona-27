@@ -23,9 +23,7 @@
         </ul>        
       </nav>
 
-      <h1 class="visually-hidden">Фильтр отелей в городе Седона</h1>
-
-      
+      <h1 class="visually-hidden">Фильтр отелей в городе Седона</h1>      
 
         <form action="https://echo.htmlacademy.ru" method="get" class="form-hotels">
 
@@ -78,21 +76,21 @@
            <input type="range" name="cost-per-day" id="cost-per-day" min="0" max="3000" step="100">
 
              <!-- Двойной ползунок без js не сделать? -->
-
-          </fieldset>
-          <button type="button" class="results">Показать
-          </button>
+             <button type="button" class="button-show-results">Показать
+            </button>
+          </fieldset>         
         </form>
       </div>
     </header>           
 
     <main>      
-      <div>
+      <div class="results-of-search">
+
         <h2 class="visually-hidden">Критерии поиска</h2>
 
-        <span class="results-of-search">Найдено: 3</span>
+        <span>Найдено: 3</span>
         <h2>Сортировка</h2>
-        <ul class=breadcrumps>
+        <ul>
           <li>             
             <a href="#">По цене</a>            
           </li>
@@ -104,6 +102,7 @@
           </li>
         </ul>        
 
+        <div class="search-buttons">
           <button type="button" class="filter-up">
             <img src="img/icon-up-dir.svg" width="11" height="10" alt="Вверх">
           </button>
@@ -111,100 +110,126 @@
           <button type="button" class="filter-down">  
             <img src="img/icon-down-dir.svg" width="11" height="10" alt="Вниз">
           </button>
+        </div>
+
       </div>
 
       <section class="hotels-container">
         <h2 class="visually-hidden">Подходящие варианты</h2>
 
-        <article class="accomodation">   
+        <article class="accomodation-item">   
 
           <div class="article-picture"> 
             <img src="img/article-hotel.jpg" width="135" height="90" alt="Изображение отеля">
           </div>
 
           <div class="article-item-info">
-            <h2>AMANDA RESORT & SPA</h2>     
-          
+            <h2>AMANDA RESORT & SPA</h2>               
             <p>
               <span class="category hotel">Гостиница</span>
               <span class="price">От 4000 Р.</span>
             </p>
             <div>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>            
+              <a class="details-button" href="#">Подробнее</a>
+              <a class="book-button" href="#">Забронировать</a>            
             </div>              
           </div>
-          <div class="atrile-value">
-            <img src="img/star.svg" widht="18" height="17" alt="5 звезд">
+          <div class="article-value">
+            <img src="img/star.svg" widht="18" height="17" alt="Звезда">
+            <img src="img/star.svg" widht="18" height="17" alt="Звезда">
+            <img src="img/star.svg" widht="18" height="17" alt="Звезда">
+            <img src="img/star.svg" widht="18" height="17" alt="Звезда">
+            <img src="img/star.svg" widht="18" height="17" alt="Звезда">
             <span class="rating">Рейтинг: 8,5</span>         
           </div>
         </article>
 
-        <article>
-          <h2>DESERT QUAIL INN
-            <img src="img/star.svg" widht="18" height="17" alt="3 звезды">
-          </h2>
-          <div class="desert-hotel">
+        <article class="accomodation-item">
+
+          <div class="article-picture">
             <img src="img/article-motel.jpg" width="135" height="90" alt="Изображение отеля">
           </div>
-          <p>
-            <span class="category motel">Мотель</span>
-            <span class="price">От 3000 Р.</class>
-          </p>
-          <div>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+
+          <div class="article-item-info">
+            <h2>DESERT QUAIL INN</h2>         
+            <p>
+              <span class="category motel">Мотель</span>
+              <span class="price">От 3000 Р.</class>
+           </p>
+           <div>
+             <a class="details-button" href="#">Подробнее</a>
+             <a class="book-button" href="#">Забронировать</a>
+           </div>
+         </div>
+
+          <div class="article-value">            
+            <img src="img/star.svg" widht="18" height="17" alt="Звезда">
+            <img src="img/star.svg" widht="18" height="17" alt="Звезда">
+            <img src="img/star.svg" widht="18" height="17" alt="Звезда">
             <span class="rating">Рейтинг: 8,9</span>    
-          </div>                                 
+          </div>            
+
         </article>  
           
-        <article>
-          <h2>VILLAS AT POCO DIABLO
-            <img src="img/star.svg" widht="18" height="17" alt="2 звезды">
-          </h2>
-          <div class="villas"> 
-              <img src="img/article-apartments.jpg" width="135" height="90" alt="Изображение отеля">
-          </div> 
-          <p>
-            <span class="category apartments">Апартаменты</span>
-            <span class="price">От 2000 Р.<span>
-          </p>
-          <div>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+        <article class="accomodation-item">
+
+          <div class="article-picture">
+            <img src="img/article-apartments.jpg" width="135" height="90" alt="Изображение отеля">
+          </div>
+
+          <div class="article-item-info">
+             <h2>VILLAS AT POCO DIABLO</h2>           
+           <p>
+             <span class="category apartments">Апартаменты</span>
+             <span class="price">От 2000 Р.<span>
+            </p>
+            <div>
+              <a class="details-button" href="#">Подробнее</a>
+              <a class="book-button" href="#">Забронировать</a>
+            </div>
+          </div>
+
+          <div class="article-value">
+            <img src="img/star.svg" widht="18" height="17" alt="Звезда">
+            <img src="img/star.svg" widht="18" height="17" alt="Звезда">            
             <span class="rating">Рейтинг: 9,2</span>
           </div>                                         
         </article>       
       </section>
     </main>
   
-    <footer>      
-      <a href="hotels.html">#VISITSEDONIA</a>
-      <a href: tel:+74956660266>Тел: +7 (495) 666-02-66</a> 
+    <footer class="footer-main">     
+      <div class="footer-contacts"> 
+       <a href="hotels.html">#VISITSEDONIA</a>
+       <a href: tel:+74956660266>Тел: +7 (495) 666-02-66</a> 
+      </div>
 
-     <ul>
-       <li>
-         <a href="twitter.com/sedona"> 
-          <img src="img/twitter.svg" width="17" height="15" alt="Twitter Icon">
-        </a>
-      </li>
-      <li>
-        <a href="facebook.com/sedona"> 
-          <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook Icon">
-        </a>
-      </li>
-      <li>
-         <a href="youtube.com/sedona"> 
-          <img src="img/youtube.svg" width="20" height="16" alt="Youtube Icon">
+      <ul class="footer-social">
+        <li>
+          <a href="twitter.com/sedona"> 
+           <img src="img/twitter.svg" width="17" height="15" alt="Twitter Icon">
          </a>
        </li>
-     </ul>
+       <li>
+         <a href="facebook.com/sedona"> 
+           <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook Icon">
+         </a>
+       </li>
+       <li>
+          <a href="youtube.com/sedona"> 
+           <img src="img/youtube.svg" width="20" height="16" alt="Youtube Icon">
+          </a>
+        </li>
+      </ul>
 
-      <a href="htmlacademy.ru" >
-        <p>Website by
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy logo">
-        </p>
-      </a> 
-   </footer>    
+      <div class="footer-devs">
+       <a href="htmlacademy.ru" >
+         <p>Website by
+           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy logo">
+         </p>
+       </a> 
+      </div>
+    </footer>    
+
   </body>
 </html>
