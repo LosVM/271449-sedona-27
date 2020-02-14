@@ -11,12 +11,14 @@ body {
     }
 */
 
-header {
-    background-image: url("/img/background-main.jpg");
+header {    
+    background-image: url("../img/background-main.jpg");
     background-size: 1200px auto;
     background-position: top center;
     background-repeat: no-repeat;    
 }
+
+
 
 .welcome-picture {
     background-image: url("/img/welcome.png");    
@@ -371,5 +373,5 @@ input[type="number"] {
 .cost-perday {
     width: 1008px;
     padding: 0;
-    margin: 87px 74px 35px auto;
+    margin: 87px 74px 35px 50px;
 }
