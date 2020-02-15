@@ -105,15 +105,17 @@ a {
 }
 
 
-
 .features-list {
     display: flex;
     flex-direction: column;
+
+    margin: 0;
+    padding: 0;
     /* flex-wrap: wrap; */
     /* flex-grow: 1; */
     font-size: 14px;
-
     line-height: 21px;
+
     color: #000000;
     text-align: center;
     color: #000000;    
@@ -321,7 +323,7 @@ a {
 .search-form {
     width: 568px;
     min-height: 395px;
-    padding-left: 450px;
+    padding: 0px 350px;
     background-color: #ffffff;
     color: #000000;
 }
@@ -425,13 +427,33 @@ input[type="number"] {
     list-style: none;
 }
 
+.twitter {
+    margin: 0;
+    width: 46px;
+    height: 48px;
+    background-color:  #81b3d2;
+}
+
+.facebook {
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+}
+
+
+.youtube {
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+}
+
 .footer-social li {
     /* display: inline; */
       
 }
 
 .footer-social a {
-    background-color: #81b3d2;
+    /* background-color: #81b3d2; */
 }
 
 
