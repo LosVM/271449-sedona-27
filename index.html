@@ -119,37 +119,50 @@
 
       <section class="offer">
         <h2>Заинтересовались?</h2>
-        <span>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</span>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             
         <form action="https://echo.htmlacademy.ru" method="post" class="search-form">
           <button type="button" class="brown-button"><span>Поиск гостиници в Седоне</span></button>
           
-          <fieldset class="date-in">
-            <label>
+          <fieldset>
+            <label for="date-in" class="date-in">
               Дата Заезда
+            </label>
+
+            <div class="date-in-field">
               <input type="date" name="date-in" id="date-in" required>
               <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
-            </label>
+            </div>
           </fieldset>
 
-          <fieldset class="date-out">
-            <label>
+          <fieldset>
+            <label for="date-out" class="date-out">
               Дата Выезда
+            </label>
+
+            <div class="date-out-field">
               <input type="date" name="date-out" id="date-out" required>
               <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
-            </label>
+            </div>
           </fieldset>
 
-          <fieldset class="amount-of-adults">
-            <label>
+          <fieldset>
+            <label for="amount-of-adults" class="amount-of-adults">
               Взрослые
+            </label>
+
+            <div class="amount-of-adults-field">
               <input type="number" name="amount-of-adults" id="amount-of-adults" min="0" max="99" step="1">
-            </label>
+            </div>
             
-            <label class="amount-of-children">
+            <label for="amount-of-children" class="amount-of-children">
                 Дети
-              <input type="number" name="amount-of-children" id="amount-of-children" min="0" max="99" step="1">  
             </label>
+
+            <div class="amount-of-children-field">
+              <input type="number" name="amount-of-children" id="amount-of-children" min="0" max="99" step="1">  
+            </div>
+            
           </fieldset>        
             <button type="button" class="blue-button">Найти</button>        
         </form>       
