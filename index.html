@@ -124,46 +124,35 @@
         <form action="https://echo.htmlacademy.ru" method="post" class="search-form">
           <button type="button" class="brown-button"><span>Поиск гостиници в Седоне</span></button>
           
-          <fieldset>
-            <label for="date-in" class="date-in">
+          <p class="date-section">
+            <label>
               Дата Заезда
-            </label>
+            </label>           
 
-            <div class="date-in-field">
-              <input type="date" name="date-in" id="date-in" required>
-              <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
-            </div>
-          </fieldset>
+            <input type="date" name="date-in" class="calendar-icon" required>
+            <!-- <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"> -->            
+          </p>
 
-          <fieldset>
-            <label for="date-out" class="date-out">
+          <p class="date-section">
+            <label>
               Дата Выезда
+            </label>  
+
+            <input type="date" name="date-out" class="calendar-icon" required>
+              <!-- <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"> -->            
+          </p>
+
+          <p class="number-section">
+            <label>
+              Взрослые   
+              <input class="number-calendar-icon" type="number" name="amount-of-adults" min="0" max="99" step="1">           
             </label>
 
-            <div class="date-out-field">
-              <input type="date" name="date-out" id="date-out" required>
-              <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <label for="amount-of-adults" class="amount-of-adults">
-              Взрослые
-            </label>
-
-            <div class="amount-of-adults-field">
-              <input type="number" name="amount-of-adults" id="amount-of-adults" min="0" max="99" step="1">
-            </div>
-            
-            <label for="amount-of-children" class="amount-of-children">
-                Дети
-            </label>
-
-            <div class="amount-of-children-field">
+            <label>
+              Дети
               <input type="number" name="amount-of-children" id="amount-of-children" min="0" max="99" step="1">  
-            </div>
-
-          </fieldset>        
+            </label>
+          </p>        
             <button type="button" class="blue-button">Найти</button>        
         </form>       
       </section>
