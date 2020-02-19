@@ -307,16 +307,17 @@ a {
 .offer {
     margin: 0;
     width: 1200px;
-    min-height: 400px;
+    min-height: 290px;
 
     font-weight: bold;
     background-color: #ffffff;
     text-align: center;
 }
 
-.offer h2 {
+.offer h2 {    
     margin: 0;
     padding: 57px 400px 36px 400px;
+
     font-size: 30px;
     line-height: 36px;
     font-weight: bold;
@@ -500,12 +501,14 @@ input:focus {
     padding: 36px 169px 32px 132px;
 }
 
-/* .footer-social { 
-    width: 154px;
-    min-height: 42px;
-    margin: 0;
-    padding: 36px 228px 36px 0px;
-    list-style: none;
+ .footer-social { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 150px;
+
+    padding: 36px 228px 36px 0px;    
+    list-style: none;        
 }
 
 .twitter {
@@ -533,7 +536,7 @@ input:focus {
 }
 */
 
-
+/*  
 .footer-main ul {
     display: flex;
     flex-wrap: wrap;
@@ -542,6 +545,7 @@ input:focus {
     width: 150px;
     list-style: none;
 }
+*/
 
 .social-button {
     display: flex;
@@ -576,11 +580,11 @@ input:focus {
 
 .footer-devs:hover a,
 .footer-devs:focus a {
-    background-color: #81b3d2;
+    fill: #81b3d2;
 }
 
 .footer-devs:active a {
-    background-color: #bdbbbc;
+    fill: #bdbbbc;
 }
 
 
@@ -642,8 +646,19 @@ input:focus {
     width: 133px;
     height: 32px;
     border: solid 2px #ffffff;
+    opacity: 0.1;
+}
+
+.button-show-results span {
+    color: #ffffff;
+}
+
+.button-show-results:hover {
+    background-color: #ffffff;
+    color: #000000;
     opacity: 1;
 }
+
 
 .results-of-search {
     display: flex;
@@ -652,6 +667,7 @@ input:focus {
 }
 
 .results-of-search h2 {
+    width: 145px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -681,6 +697,8 @@ input:focus {
 .results-of-search ul li {
     display: inline;
 }
+
+.results-of-search li:hover
 
 .filter-option {
     font-size: 12px;
@@ -717,10 +735,10 @@ input:focus {
     fill: #cacaca;
 }
 
-.filter-button-up:hover,
-.filter-button-up:focus,
-.filter-button-down:hover,
-.filter-button-down:focus {
+.filter-button-up:hover path,
+.filter-button-up:focus path,
+.filter-button-down:hover path,
+.filter-button-down:focus path {
     fill: #000000;
 }
 
