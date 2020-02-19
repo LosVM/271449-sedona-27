@@ -391,8 +391,8 @@ input[type="number"] {
     height: 58px;
 
     margin: 0;
-    padding: 0px 55px 55px 55px;
-    
+    /* padding: 0px 55px 55px 55px; */
+
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
