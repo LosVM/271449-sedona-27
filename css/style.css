@@ -499,6 +499,7 @@ input:focus {
     min-height: 50px;
     margin: 0;
     padding: 36px 169px 32px 132px;
+    text-align: left;
 }
 
  .footer-social { 
@@ -511,6 +512,8 @@ input:focus {
     list-style: none;        
 }
 
+
+/* 
 .twitter {
     margin: 0;
     width: 46px;
@@ -534,9 +537,9 @@ input:focus {
 .footer-social li {
     display: inline;      
 }
+
 */
 
-/*  
 .footer-main ul {
     display: flex;
     flex-wrap: wrap;
@@ -545,7 +548,7 @@ input:focus {
     width: 150px;
     list-style: none;
 }
-*/
+
 
 .social-button {
     display: flex;
@@ -602,6 +605,11 @@ input:focus {
 
 .form-hotels ul {
     list-style: none;
+    padding: 0;
+}
+
+.form-hotels li {
+    padding-top: 15px;
 }
 
 .form-hotels legend {    
@@ -640,6 +648,8 @@ input:focus {
 .range-price {
     display: inline-block;
     border: 2px solid #ffffff;
+    width: 220px;
+    color: #ffffff;
 }
 
 .button-show-results {
@@ -698,7 +708,9 @@ input:focus {
     display: inline;
 }
 
-.results-of-search li:hover
+.results-of-search li:hover {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);    
+}
 
 .filter-option {
     font-size: 12px;
@@ -776,6 +788,16 @@ input:focus {
     margin: 0;
 }
 
+.accomodation-item h2:hover,
+.accomodation-item h2:focus {
+    color: #81b3d2;
+}
+
+.accomodation-item h2:active {
+     color: rgba(0, 0, 0, 0.3);
+}
+   
+
 .hotel-info {
     min-height: 151px;
     width: 1200px;
@@ -809,15 +831,40 @@ input:focus {
 .details-button {
     width: 110px;
     height: 27px;
-    color: #ffffff;
-    font-weight: bold;
+    padding: 8px 17px 7px 17px;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;    
     background-color: #81b3d2;
+}
+
+.details-button:hover,
+.details-button:focus {
+    background-color: #669ec0;
+}
+
+.details-button:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .book-button {
     width: 142px;
-    height: 27px;
+    height: 27px;    
+    padding: 8px 16px;
+    
     color: #ffffff;
-    font-weight: bold;
+    font-size: 14px;
     background-color: #766357;
+}
+
+.book-button:hover,
+.book-button:focus {
+    background-color: #604e43;
+}
+
+.book-button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
 }
