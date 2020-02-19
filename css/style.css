@@ -707,6 +707,11 @@ input:focus {
     padding: 39px 73px 37px 0px;
 }
 
+.filter-button-up,
+.filter-button-down {
+    border: none;
+    background-color: white;}
+
 .filter-button-up path,
 .filter-button-down path {
     fill: #cacaca;
