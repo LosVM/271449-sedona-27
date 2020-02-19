@@ -121,41 +121,45 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             
-        <form action="https://echo.htmlacademy.ru" method="post" class="search-form">
-          <button type="button" class="brown-button"><span>Поиск гостиници в Седоне</span></button>
-          
+        <button type="button" class="brown-button"><span>Поиск гостиници в Седоне</span></button>
+                  
+      </section>    
+
+      <form action="https://echo.htmlacademy.ru" method="post" class="search-form">
           <p class="date-section">
-            <label>
+            <label for="date-in">
               Дата Заезда
             </label>           
 
-            <input type="date" name="date-in" class="calendar-icon" required>
+            <input class="calendar-icon" type="date" name="date-in" id="date-in" required>
             <!-- <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"> -->            
           </p>
 
           <p class="date-section">
-            <label>
+            <label for="date-out">
               Дата Выезда
             </label>  
 
-            <input type="date" name="date-out" class="calendar-icon" required>
+            <input class="calendar-icon" type="date" name="date-out" id="date-out" required>
               <!-- <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"> -->            
           </p>
 
           <p class="number-section">
-            <label>
+            <label for="amount-of-adults">
               Взрослые   
-              <input class="number-calendar-icon" type="number" name="amount-of-adults" min="0" max="99" step="1">           
             </label>
+            <input class="number-calendar-icon" type="number" name="amount-of-adults" min="0" max="99" step="1">           
+            
 
-            <label>
+            <label for="amount-of-children">
               Дети
-              <input type="number" name="amount-of-children" id="amount-of-children" min="0" max="99" step="1">  
             </label>
+            <input type="number" name="amount-of-children" id="amount-of-children" min="0" max="99" step="1">  
+            
           </p>        
-            <button type="button" class="blue-button">Найти</button>        
+            <button type="button" class="blue-button"><span>Найти</span></button>        
         </form>       
-      </section>
+      
 
       <div class="map">
         <img src="img/map.jpg" width="1200" height="594" alt="Карта"> 
