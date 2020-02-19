@@ -71,6 +71,15 @@ a {
     color: inherit;   
 }
 
+.navigation a:hover,
+.navigation a:focus {
+    color: #81b3d2;
+}
+
+.navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .welcome-picture {
     background-image: url("../img/welcome.png");    
     width: 459px;
@@ -333,18 +342,34 @@ a {
     color: #ffffff;
     }
 
+.brown-button:hover,
+.brown-button:focus {
+    background-color: #604e43;
+}
+
+.brown-button:active {
+    background-color: #503e33;
+}
+
+.brown-button:active span {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .search-form {
     width: 568px;
     min-height: 395px;
-    padding: 0px 316px;
-    background-color: #ffffff;
 
+    margin: 0px 316px;
+
+    background-color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     color: #000000;
+    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .date-in-section {
+    display: flex;
     width: 458px;
     min-height: 38px;
     
@@ -353,6 +378,7 @@ a {
 }
 
 .date-out-section {
+    display: flex;
     width: 458px;
     margin: 0;
     padding: 0px 55px 30px 55px;
@@ -362,7 +388,10 @@ a {
     background-image: url("../img/calendar.svg");
     background-repeat: no-repeat;
     background-position: 316px center;
+    background-color: #cacaca;
 }
+
+
 
 .date-in-section label {
     width: 91px;
@@ -389,8 +418,6 @@ a {
     padding: 0px 55px 54px 55px;
 }
 
-
-
 .number-section label {
     margin: 14px 41px 13px 0px;
 }
@@ -399,14 +426,27 @@ a {
 input[type="date"] {
     width: 346px;
     height: 38px;
-    background-color: #f2f2f2; 
-    color: #000000;
+
+    /* padding-left: 12px; */
+
+    background-color: #f2f2f2;     
+    border: none;
 }
 
 input[type="number"] {
     width: 114px;
     height: 38px;
+
     background-color: #f2f2f2; 
+    border: none;
+}
+
+input:hover {
+    background-color: #ebebeb;
+}
+
+input:focus {
+    background-color: #ffffff;
 }
 
 
@@ -416,6 +456,7 @@ input[type="number"] {
 
     margin: 0;
     margin-bottom: 55px;
+    margin-left: 55px;
     /* padding: 0px 55px 55px 55px; */
 
     font-size: 21px;
@@ -426,8 +467,18 @@ input[type="number"] {
     color: #ffffff;
 }
 
+.blue-button:hover,
+.blue-button:focus {
+    background-color: #669ec0;
+}
 
+.blue-button:active {
+    background-color: #5496bd;
+}
 
+.blue-button:active span {
+    color: rgba(255, 255, 255, 0.3);
+}
 
 
 .footer-main {
@@ -449,7 +500,7 @@ input[type="number"] {
     padding: 36px 169px 32px 132px;
 }
 
-.footer-social {
+/* .footer-social { 
     width: 154px;
     min-height: 42px;
     margin: 0;
@@ -478,21 +529,58 @@ input[type="number"] {
 }
 
 .footer-social li {
-    display: inline;
-      
+    display: inline;      
+}
+*/
+
+
+.footer-main ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 150px;
+    list-style: none;
 }
 
-.footer-social a {
-    /* background-color: #81b3d2; */
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
+
+    background-color: #81b3d2;
 }
 
+.social-button:hover,
+.social-button:focus {
+    background-color: #669ec0;
+}
 
+.social-button:active {
+    background-color: #5496bd;    
+}
+
+.social-button:active path {
+    opacity: 0.3;
+}
+    
 
 .footer-devs {
     width: 197px;
     min-height: 40px;
     margin: 0;
     padding: 39px 101px 40px 0px;
+}
+
+.footer-devs:hover a,
+.footer-devs:focus a {
+    background-color: #81b3d2;
+}
+
+.footer-devs:active a {
+    background-color: #bdbbbc;
 }
 
 
@@ -594,10 +682,49 @@ input[type="number"] {
     display: inline;
 }
 
+.filter-option {
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+
+    margin: 0;
+    padding: 41px 33px 37px 0px; 
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);    
+}
+
+.filter-option:focus,
+.filter-option:hover {
+    color: #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.filter-option:active {
+    color: #000000;
+}
+
 .search-buttons {
     width: 73px;
     padding: 39px 73px 37px 0px;
 }
+
+.filter-button-up path,
+.filter-button-down path {
+    fill: #cacaca;
+}
+
+.filter-button-up:hover,
+.filter-button-up:focus,
+.filter-button-down:hover,
+.filter-button-down:focus {
+    fill: #000000;
+}
+
+.filter-button-up:active path,
+.filter-button-down:active path {
+    fill: #81b3d2;
+}
+
+
 
 .hotels-container {    
     width: 1200px;
