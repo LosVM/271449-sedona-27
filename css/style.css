@@ -581,14 +581,15 @@ input:focus {
     padding: 39px 101px 40px 0px;
 }
 
-.footer-devs:hover a,
-.footer-devs:focus a {
+.footer-devs:hover path,
+.footer-devs:focus path {
     fill: #81b3d2;
 }
 
-.footer-devs:active a {
+.footer-devs:active path {
     fill: #bdbbbc;
 }
+
 
 
 
@@ -616,6 +617,7 @@ input:focus {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
+    padding-top: 31px;
 }
 
 .form-hotels label {        
@@ -646,10 +648,18 @@ input:focus {
 }
 
 .range-price {
-    display: inline-block;
-    border: 2px solid #ffffff;
-    width: 220px;
+    display: flex;
+    justify-content: space-around;
+    width: 314px;
+
+    border: 2px solid #ffffff;   
     color: #ffffff;
+}
+
+input [type="range"] {
+    width: 314px;
+    margin-top: 22px;
+    margin-bottom: 34px;
 }
 
 .button-show-results {
@@ -660,7 +670,7 @@ input:focus {
 }
 
 .button-show-results span {
-    color: #ffffff;
+    /* color: #ffffff; */
 }
 
 .button-show-results:hover {
@@ -718,14 +728,13 @@ input:focus {
     color: rgba(0, 0, 0, 0.3);
 
     margin: 0;
-    padding: 41px 33px 37px 0px; 
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);    
+    padding: 41px 33px 37px 0px;      
 }
 
 .filter-option:focus,
 .filter-option:hover {
     color: #81b3d2;
-    border-bottom: 1px dotted #81b3d2;
+    /* border-bottom: 1px dotted #81b3d2; */
 }
 
 .filter-option:active {
