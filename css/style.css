@@ -338,14 +338,24 @@ a {
     min-height: 395px;
     padding: 0px 316px;
     background-color: #ffffff;
+
+    font-size: 14px;
+    font-weight: bold;
     color: #000000;
 }
 
-.date-section {
+.date-in-section {
     width: 458px;
     min-height: 38px;
+    
     margin: 0;
     padding: 55px 55px 29px 55px;
+}
+
+.date-out-section {
+    width: 458px;
+    margin: 0;
+    padding: 0px 55px 30px 55px;
 }
 
 .calendar-icon {
@@ -354,7 +364,18 @@ a {
     background-position: 316px center;
 }
 
-.date-section label {
+.date-in-section label {
+    width: 91px;
+    height: 12px;
+    
+    margin: 14px 21px 12px 0px;
+    padding: 0;
+}
+
+.date-out-section label {
+    width: 91px;
+    height: 12px;
+   
     margin: 14px 21px 12px 0px;
     padding: 0;
 }
@@ -365,7 +386,10 @@ a {
 
     width: 458px;
     min-height: 38px;
+    padding: 0px 55px 54px 55px;
 }
+
+
 
 .number-section label {
     margin: 14px 41px 13px 0px;
@@ -391,6 +415,7 @@ input[type="number"] {
     height: 58px;
 
     margin: 0;
+    margin-bottom: 55px;
     /* padding: 0px 55px 55px 55px; */
 
     font-size: 21px;
