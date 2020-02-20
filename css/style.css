@@ -456,8 +456,7 @@ input:focus {
 
     padding: 0;
     margin: 0;
-    font-size: 25px;
-    margin-right: 17px;
+    font-size: 25px;    
     background-color: #f2f2f2;
     color: #cacaca;
 }
@@ -477,7 +476,7 @@ input:focus {
 
     padding: 0;
     margin: 0;
-    margin-right: 17px;
+    margin-right: 20px;
     font-size: 25px;
     background-color: #f2f2f2;
     color: #cacaca;
