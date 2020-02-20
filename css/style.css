@@ -435,7 +435,7 @@ input[type="date"] {
 }
 
 input[type="number"] {
-    width: 114px;
+    width: 38px;
     height: 38px;
 
     background-color: #f2f2f2; 
@@ -457,6 +457,16 @@ input:focus {
     padding: 0;
     margin: 0;
     background-color: #f2f2f2;
+    color: #cacaca;
+}
+
+.minus-button:hover,
+.minus-botton:focus {
+    color: #000000;
+}
+
+.minus-button:active {
+    color: #81b3d2;
 }
 
 .plus-button {
@@ -466,6 +476,16 @@ input:focus {
     padding: 0;
     margin: 0;
     background-color: #f2f2f2;
+    color: #cacaca;
+}
+
+.plus-button:hover,
+.plus-button:focus {
+    color: #000000;
+}
+
+.plus-button:active {
+    color: #81b3d2;
 }
 
 .blue-button {
