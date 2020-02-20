@@ -450,6 +450,23 @@ input:focus {
     background-color: #ffffff;
 }
 
+.minus-button {
+    width: 38px;
+    height: 38px;
+
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.plus-button {
+    width: 38px;
+    height: 38px;
+
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+}
 
 .blue-button {
     width: 458px;
@@ -643,7 +660,7 @@ input:focus {
 .cost-perday {
     width: 314px;
     margin: 0;
-    padding: 87px 74px 35px 0px;
+    padding: 31px 74px 35px 0px;
     border: none; 
 }
 
@@ -652,12 +669,13 @@ input:focus {
     justify-content: space-around;
     width: 314px;
 
+    margin-bottom: 22px;
     border: 2px solid #ffffff;   
     color: #ffffff;
 }
 
-input [type="range"] {
-    width: 314px;
+input[type="range"] {
+    width: 317px;
     margin-top: 22px;
     margin-bottom: 34px;
 }
