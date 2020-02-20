@@ -456,6 +456,8 @@ input:focus {
 
     padding: 0;
     margin: 0;
+    font-size: 25px;
+    margin-right: 17px;
     background-color: #f2f2f2;
     color: #cacaca;
 }
@@ -475,6 +477,8 @@ input:focus {
 
     padding: 0;
     margin: 0;
+    margin-right: 17px;
+    font-size: 25px;
     background-color: #f2f2f2;
     color: #cacaca;
 }
@@ -703,6 +707,7 @@ input[type="range"] {
 .button-show-results {
     width: 133px;
     height: 32px;
+    margin-left: 88px;
     border: solid 2px #ffffff;
     opacity: 0.1;
 }
