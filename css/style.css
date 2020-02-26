@@ -397,7 +397,7 @@ a {
 .modal-show {
     display: block;
 
-    animation: bounce 0.6s;
+    animation: bounce 1s;
 }
 
 

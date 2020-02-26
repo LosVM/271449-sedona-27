@@ -126,47 +126,8 @@
                   
       </section>    
 
-      <form action="https://echo.htmlacademy.ru" method="post" class="modal-search-form">
-          <p class="date-in-section">
-            <label for="date-in">
-              Дата Заезда:          
-            </label>        
-              <input class="calendar-icon" type="date" name="date-in" id="date-in" required>
-              <!-- <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"> -->            
-                   
-          </p>
-
-          <p class="date-out-section">
-            <label for="date-out">
-              Дата Выезда:  
-            </label>           
-              <input class="calendar-icon" type="date" name="date-out" id="date-out" required>
-              <!-- <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"> -->            
-            
-            </p>
-
-          <p class="number-section">           
-            <label for="amount-of-adults">
-              Взрослые:  
-            </label>
-
-            <button type="button" class="minus-button">-</button>
-              <input type="number" name="amount-of-adults" id="amount-of-adults" min="0" max="99" step="1">           
-            <button type="button" class="plus-button">+</button>       
-       
-            <label for="amount-of-children">
-              Дети:
-            </label>
-
-            <button type="button" class="minus-button">-</button>
-              <input type="number" name="amount-of-children" id="amount-of-children" min="0" max="99" step="1">  
-            <button type="button" class="plus-button">+</button>
-          </p>       
-         
-            <button type="submit" class="blue-button"><span>Найти</span></button>        
-        </form>       
+     
       
-
       <div class="map">
         <img src="img/map.jpg" width="1200" height="594" alt="Карта"> 
       </div>
@@ -230,5 +191,46 @@
       </div>
     </footer>    
       
+    <form action="https://echo.htmlacademy.ru" method="post" class="modal-search-form">
+      <p class="date-in-section">
+        <label for="date-in">
+          Дата Заезда:          
+        </label>        
+          <input class="calendar-icon" type="date" name="date-in" id="date-in" required>
+          <!-- <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"> -->            
+               
+      </p>
+
+      <p class="date-out-section">
+        <label for="date-out">
+          Дата Выезда:  
+        </label>           
+          <input class="calendar-icon" type="date" name="date-out" id="date-out" required>
+          <!-- <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"> -->            
+        
+        </p>
+
+      <p class="number-section">           
+        <label for="amount-of-adults">
+          Взрослые:  
+        </label>
+
+        <button type="button" class="minus-button">-</button>
+          <input type="number" name="amount-of-adults" id="amount-of-adults" min="0" max="99" step="1">           
+        <button type="button" class="plus-button">+</button>       
+   
+        <label for="amount-of-children">
+          Дети:
+        </label>
+
+        <button type="button" class="minus-button">-</button>
+          <input type="number" name="amount-of-children" id="amount-of-children" min="0" max="99" step="1">  
+        <button type="button" class="plus-button">+</button>
+      </p>       
+     
+        <button type="submit" class="blue-button"><span>Найти</span></button>        
+    </form>       
+
+
   </body>
 </html>
