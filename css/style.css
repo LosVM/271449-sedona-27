@@ -51,6 +51,7 @@ a {
     
 .navigation {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     width: 1200px;
     height: 56px;
@@ -65,6 +66,10 @@ a {
     background-color: #ffffff;
     text-align: center;   
     list-style: none; 
+}
+
+.sedona-logo {
+    padding-top: 20px;
 }
 
 .navigation a {
@@ -356,7 +361,8 @@ a {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.search-form {
+.modal-search-form {
+    display: none;
     width: 568px;
     min-height: 395px;
 
@@ -368,6 +374,32 @@ a {
     color: #000000;
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
+
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+.modal-show {
+    display: block;
+
+    animation: bounce 0.6s;
+}
+
 
 .date-in-section {
     display: flex;
