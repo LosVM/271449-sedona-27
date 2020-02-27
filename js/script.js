@@ -1,7 +1,7 @@
 var link = document.querySelector(".brown-button");
 
 var popup = document.querySelector(".modal-search-form");
-var close = popup.querySelector(".blue-button");
+var close = popup.querySelector(".brown-button");
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
