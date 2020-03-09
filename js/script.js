@@ -1,14 +1,14 @@
-var link = document.querySelector(".brown-button");
 
+ 
+var popup = document.querySelector(".modal-hide");
+var popup = document.querySelector(".modal-show");
 var popup = document.querySelector(".modal-search-form");
-var close = popup.querySelector(".brown-button");
 
-link.addEventListener("click", function (evt) {
+if (popup) {
+    popup.classList.toggle("modal-show");
+}
+
+button.addEventListener("click", function(evt) {
     evt.preventDefault();
-    popup.classList.add("modal-show");
+    popup.classlist.toggle("modal-show");
 });
-
-close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-  });

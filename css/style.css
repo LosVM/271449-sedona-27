@@ -336,7 +336,7 @@ a {
     line-height: 24px;
 }
 
-.brown-button {
+.hotels-search-button {
     width: 568px;
     height: 86px;
 
@@ -348,27 +348,24 @@ a {
     color: #ffffff;
     }
 
-.brown-button:hover,
-.brown-button:focus {
+.hotels-search-button:hover,
+.hotels-search-button:focus {
     background-color: #604e43;
 }
 
-.brown-button:active {
+.hotels-search-button:active {
     background-color: #503e33;
 }
 
-.brown-button:active span {
+.hotels-search-button:active span {
     color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-search-form {
     position: absolute;
-
-    display: none;
+    
     width: 568px;
-    min-height: 395px;
-
-    bottom: 1860px;
+    min-height: 395px;    
 
     margin: 0px 316px;
 
@@ -377,33 +374,25 @@ a {
     font-weight: bold;
     color: #000000;
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+    transform: translateY(-50%);
+    transform-origin: top center;
+    animation-name: modal-animation;
+    animation-duration: 2s;
 }
 
-@keyframes search-popup {
-    0% {
-      transform: translateY(0);
-    }
-  
-    70% {
-      transform: translateY(30px);
-    }
-  
-    90% {
-      transform: translateY(50px);
-    }
-  
-    100% {
-      transform: translateY(0);
-    }
-  }
-
+@keyframes modal-animation {
+    0% {transform: scaleY(0) translateX(-50%);}
+    100% {transform: scaleY(1) translateX(-50%);}
+}
 
 .modal-show {
     display: block;
-
-    animation: search-popup 1s;
 }
 
+.modal-hide {
+    display: none;
+}
 
 .date-in-section {
     display: flex;
@@ -427,8 +416,6 @@ a {
     background-position: 316px center;
     background-color: #cacaca;
 }
-
-
 
 .date-in-section label {
     width: 91px;
@@ -535,7 +522,7 @@ input:focus {
 }
  */
 
-.blue-button {
+.find-hotels-button {
     width: 458px;
     height: 58px;
 
@@ -552,16 +539,16 @@ input:focus {
     color: #ffffff;
 }
 
-.blue-button:hover,
-.blue-button:focus {
+.find-hotels-button:hover,
+.find-hotels-button:focus {
     background-color: #669ec0;
 }
 
-.blue-button:active {
+.find-hotels-button:active {
     background-color: #5496bd;
 }
 
-.blue-button:active span {
+.find-hotels-button:active span {
     color: rgba(255, 255, 255, 0.3);
 }
 
