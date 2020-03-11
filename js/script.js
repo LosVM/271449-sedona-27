@@ -13,3 +13,16 @@ button.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classlist.toggle("modal-show");    
 });
+
+var popup = document.querySelector(".modal-hide");
+
+if (popup) {
+    popup.classList.toggle("modal-show");
+}
+
+var button = document.querySelector(".hotels-search-button");
+
+button.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popup.classlist.toggle("modal-show");    
+});
