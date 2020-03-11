@@ -715,13 +715,19 @@ input[type="checkbox"] ~ label::before {
 }
  */
 
- Input[type=checbox]+span {
-     background-image: url("../img/checkbox-off.svg")
- }
+ 
 
- Input[type=checbox]+span:checked {
-     background-image: url("../img/checkbox-on.svg");
- }
+input[type="checkbox"]+span {
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 23px;
+}
+
+input[type="checkbox"]:checked+span {
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+}
 
 .category-filter {
     width: 400px;
