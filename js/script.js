@@ -11,5 +11,5 @@ if (popup) {
 
 button.addEventListener("click", function(evt) {
     evt.preventDefault();
-    popup.classlist.toggle("modal-hide");    
+    popup.classlist.toggle("modal-show");    
 });
