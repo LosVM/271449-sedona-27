@@ -6,7 +6,7 @@ var popup = document.querySelector(".modal-search-form");
 var button = document.querySelector(".hotels-search-button");
 
 if (popup) {
-    popup.classList.toggle("modal-hide");
+    popup.classList.toggle("modal-show");
 }
 
 button.addEventListener("click", function(evt) {
