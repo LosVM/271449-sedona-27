@@ -646,6 +646,8 @@ input:focus {
     
 
 .footer-devs {
+    display: flex;
+
     width: 197px;
     min-height: 40px;
     margin: 0;
@@ -702,6 +704,14 @@ input:focus {
     margin: 0;
     padding: 31px 115px 31px 72px;
     border: none;     
+}
+
+input[type="checkbox"]:checked ~ label::after {
+    background-image: url("../img/checkbox-on.svg")
+}
+
+input[type="checkbox"] ~ label::before {
+    background-image: url("../img/checkbox-off.svg");
 }
 
 .category-filter {
@@ -898,6 +908,10 @@ input[type="range"] {
 }
 
 .article-value {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+
     width: 322px;
     min-height: 100px;
     margin: 0;
