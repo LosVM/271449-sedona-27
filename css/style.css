@@ -679,6 +679,7 @@ input:focus {
 .form-hotels ul {
     list-style: none;
     padding: 0;
+    margin-top: -23px;
 }
 
 .form-hotels li {
@@ -705,6 +706,7 @@ input:focus {
     border: none;     
 }
 
+
 /* 
 input[type="checkbox"]:checked ~ label::after {
     background-image: url("../img/checkbox-on.svg")
@@ -718,15 +720,22 @@ input[type="checkbox"] ~ label::before {
  
 
 input[type="checkbox"]+span {
+    position: absolute;
+
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
+
     width: 27px;
     height: 23px;
+    left: 72px;
 }
 
 input[type="checkbox"]:checked+span {
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
+    width: 27px;
+    height: 23px;
+    left: 72px;
 }
 
 .category-filter {
