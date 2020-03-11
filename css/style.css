@@ -727,15 +727,18 @@ input[type="checkbox"]+span {
 
     width: 27px;
     height: 23px;
-    left: 72px;
+    /* left: 72px; */
+    background-position: left;
 }
 
 input[type="checkbox"]:checked+span {
+    position: absolute;
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     width: 27px;
     height: 23px;
-    left: 72px;
+    /* left: 72px; */
+    background-position: left;
 }
 
 .category-filter {
