@@ -6,17 +6,16 @@ body {
     text-transform: uppercase;
 }
 
- /* .background-main {   
-    background-image: url("img/background-main.jpg");   
-    }
-*/
-
 /* 
 img {
     max-width: 100%;
     height: auto;
 }
  */
+
+ body ul {
+    list-style: none;
+ }
 
 header {    
     background-image: url("../img/background-main.jpg");
@@ -696,6 +695,7 @@ input:focus {
 .form-hotels label {        
     font-size: 14px;
     line-height: 21px;
+    padding-left: 40px;
 }
 
 .infrastructure-filter {
