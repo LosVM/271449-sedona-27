@@ -373,7 +373,7 @@ a {
     color: #000000;
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 
-    transform: translateY(-50%);
+    /* transform: translateX(-50%); */
     transform-origin: top center;
     animation-name: modal-animation;
     animation-duration: 2s;
