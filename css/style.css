@@ -2,8 +2,11 @@ body {
     margin: 0px;
     padding: 0px;
     
-    font-family: 'PT Sans', "sans-serif";
+    font-family: 'PT Sans', Arial, "sans-serif";
     text-transform: uppercase;
+
+    background-color: #f2f2f2;
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, .2);
 }
 
 /* 
@@ -68,7 +71,9 @@ a {
 }
 
 .sedona-logo {
-    padding-top: 20px;
+    position: absolute;
+    z-index: 1;
+    /* padding-top: 20px; */
 }
 
 .navigation a {
