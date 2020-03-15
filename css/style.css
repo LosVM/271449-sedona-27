@@ -159,8 +159,7 @@ a {
     line-height: 21px;
 
     color: #000000;
-    text-align: center;
-    color: #000000;    
+    text-align: center;    
  }
 
  .features-list ul {
@@ -186,12 +185,12 @@ a {
     min-height: 256px;    
 }
 
-.feature-main {
+.blue-bg {
     margin: 0;
     background-color: #81b3d2;
     color: #ffffff;     
     width: 400px;
-    min-height: 256px; 
+    height: 256px; 
     padding: 46px 60px 64px 60px;
     box-sizing: border-box;
 }
@@ -463,7 +462,7 @@ a {
 }
 
 
-input[type="date"] {
+input[type="text"] {
     width: 346px;
     height: 38px;
 
@@ -489,7 +488,8 @@ input:focus {
     background-color: #ffffff;
 }
 
-.minus-button {
+.minus-button,
+.plus-button {
     width: 38px;
     height: 38px;
 
@@ -498,9 +498,10 @@ input:focus {
     font-size: 25px;    
     background-color: #f2f2f2;
     color: #cacaca;
+    border: none;
 }
 
-.plus-button {
+/* .plus-button { 
     width: 38px;
     height: 38px;
 
@@ -512,6 +513,11 @@ input:focus {
     font-size: 25px;
     background-color: #f2f2f2;
     color: #cacaca;
+}
+*/
+
+.plus-button {
+    margin-right: 20px;
 }
 
 .minus-button:hover,
@@ -525,18 +531,6 @@ input:focus {
 .plus-button:active {
     color: #81b3d2;
 }
-
-
-/* 
-.plus-button:hover,
-.plus-button:focus {
-    color: #000000;
-}
-
-.plus-button:active {
-    color: #81b3d2;
-}
- */
 
 .find-hotels-button {
     width: 458px;
@@ -574,19 +568,21 @@ input:focus {
     width: 1200px;
     min-height: 120px;
 
-    display: flex;
-    font-weight: bold;
+    display: flex;    
     background-color: #ffffff;
     color: #000000;
     text-align: center;
 }
 
 .footer-contacts {
-    width: 223px;
+    width: 231px;
     min-height: 50px;
     margin: 0;
     padding: 36px 169px 32px 132px;
     text-align: left;
+    line-height: 26px;
+    font-size: 21px;
+    font-weight: bold;
 }
 
  .footer-social { 
@@ -664,10 +660,15 @@ input:focus {
 .footer-devs {
     display: flex;
 
-    width: 197px;
+    /* width: 197px; */
     min-height: 40px;
     margin: 0;
     padding: 39px 101px 40px 0px;
+}
+
+.footer-devs p {
+    font-size: 14px;
+    margin-right: 10px;
 }
 
 .footer-devs:hover path,
