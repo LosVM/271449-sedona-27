@@ -70,10 +70,23 @@ a {
     list-style: none; 
 }
 
+.navigation-item {
+    width: 239px;
+}
+
+.navigation-item:nth-child(2) {
+    text-align: left;
+}
+
+.navigation-item:nth-child(3) {
+    text-align: right;
+}
+
+
 .sedona-logo {
     position: absolute;
     z-index: 1;
-    /* padding-top: 20px; */
+    margin-left: 529px;
 }
 
 .navigation a {
@@ -381,7 +394,7 @@ a {
     /* transform: translateX(-50%); */
     transform-origin: top center;
     animation-name: modal-animation;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 @keyframes modal-animation {
