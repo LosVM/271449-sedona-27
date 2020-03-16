@@ -8,20 +8,22 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>    
-    <header class="background-filter">            
-      <nav>
-        <ul class="navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="media.html">Фото и видео</a></li>
-          <li class="sedona-logo">
+    <div class="page-wrapper">
+      <header class="background-filter">            
+        <nav>
+          <div class="sedona-logo"> 
             <a href="index.html"> 
-              <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона">
-            </a>
-          </li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>        
-      </nav>   
+             <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона">
+           </a>
+         </div>     
+
+         <ul class="navigation">
+            <li class="navigation-item"><a href="info.html">Информация</a></li>
+            <li class="navigation-item"><a href="media.html">Фото и видео</a></li>            
+            <li class="navigation-item"><a href="map.html">Карта штата</a></li>
+            <li class="navigation-item"><a href="hotels.html">Гостиницы</a></li>
+          </ul>        
+        </nav>   
 
       <h1 class="visually-hidden">Фильтр отелей в городе Седона</h1>      
 
@@ -86,9 +88,8 @@
              <button type="button" class="button-show-results"><span>Показать</span>
             </button>
           </fieldset>         
-        </form>
-      </div>
-    </header>           
+        </form>        
+     </header>           
 
     <main>      
       <div class="results-of-search">
@@ -248,5 +249,6 @@
       </div>
     </footer>    
 
+    </div>
   </body>
 </html>

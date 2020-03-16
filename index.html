@@ -5,26 +5,25 @@
     <title>Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet">    
   </head>
   <body>    
-    <header class="background-main">         
-     
-      <nav>
-        <div class="sedona-logo"> 
-          <a href="index.html"> 
-            <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона">
-          </a>
-        </div>     
+    <div class="page-wrapper">
+      <header class="background-main">       
+        <nav>
+          <div class="sedona-logo"> 
+            <a href="index.html"> 
+              <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона">
+            </a>
+          </div>     
 
-        <ul class="navigation">
-          <li class="navigation-item"><a href="info.html">Информация</a></li>
-          <li class="navigation-item"><a href="media.html">Фото и видео</a></li>            
-          <li class="navigation-item"><a href="map.html">Карта штата</a></li>
-          <li class="navigation-item"><a href="hotels.html">Гостиницы</a></li>
-        </ul>        
-      </nav>   
+          <ul class="navigation">
+            <li class="navigation-item"><a href="info.html">Информация</a></li>
+            <li class="navigation-item"><a href="media.html">Фото и видео</a></li>            
+            <li class="navigation-item"><a href="map.html">Карта штата</a></li>
+            <li class="navigation-item"><a href="hotels.html">Гостиницы</a></li>
+          </ul>        
+        </nav>   
       
       <div class="welcome-picture">
         <!-- <img src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona"> -->
@@ -41,15 +40,15 @@
         <span>Рассмотрим 5 причин, по которым Седона круче, чем Каньон!</span>
       </div>    
     
-    </header>
+      </header>
 
-    <main>
-      <h1 class="visually-hidden">Сервис для поиска жилья в Седоне</h1>   
+      <main>
+        <h1 class="visually-hidden">Сервис для поиска жилья в Седоне</h1>   
          
-      <section>        
-        <ul class="features-list">
-          <li class="hotel-feature">
-            <div class="blue-bg">
+        <section>        
+          <ul class="features-list">
+            <li class="hotel-feature">
+             <div class="blue-bg">
               <h3>Настоящий городок</h3>       
               <span>— №1 —</span>       
               <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
@@ -147,7 +146,7 @@
             <label for="date-out">
               Дата Выезда:  
             </label>           
-              <input type="text" name="date-out" id="date-out" placehokder="4 июля 2017" class="calendar-icon" >
+              <input type="text" name="date-out" id="date-out" placeholder="4 июля 2017" class="calendar-icon" >
               <!-- <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"> -->            
             
             </p>
@@ -184,7 +183,7 @@
     <footer class="footer-main">     
       <div class="footer-contacts"> 
        <span><a href="hotels.html">#VISITSEDONA</a><span>
-       <div><a href: tel:+74956660266>Тел: +7 (495) 666-02-66</a></div>
+       <div><a href="tel:+74956660266">Тел: +7 (495) 666-02-66</a></div>
       </div>
      <!--  
        <ul class="footer-social">
@@ -235,10 +234,10 @@
              <!-- <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy logo">          -->
          </a>         
       </div>
-    </footer>    
-      
+    </footer>          
    
-
-
+    <script src="js/hotels-searc.js"></script>
+    
+    </div>
   </body>
 </html>
