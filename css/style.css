@@ -595,7 +595,7 @@ input:focus {
 }
 
 .map {
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 /*  
@@ -623,7 +623,7 @@ input:focus {
 */
 
 .footer-main {
-    margin-left: 40px;
+    /* margin-left: 40px; */
     width: 1200px;
     min-height: 120px;
 
