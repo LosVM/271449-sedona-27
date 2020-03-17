@@ -577,6 +577,7 @@ input:focus {
     color: rgba(255, 255, 255, 0.3);
 }
 
+/*  
 .map {
     z-index: 0;
     bottom: 122px;
@@ -598,6 +599,7 @@ input:focus {
     position: relative;
     z-index: 1;
   }
+*/
 
 .footer-main {
     margin: 0;
@@ -1208,6 +1210,8 @@ input[type="range"] {
     
     color: #ffffff;
     font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
     background-color: #766357;
 }
 
