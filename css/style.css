@@ -343,8 +343,7 @@ a {
     margin: 0;
     width: 1200px;
     min-height: 290px;
-
-    font-weight: bold;
+    
     background-color: #ffffff;
     text-align: center;
 }
@@ -393,6 +392,7 @@ a {
 
 .modal-search-form {
     position: absolute;
+    z-index: 2;
     
     width: 568px;
     min-height: 395px;    
@@ -625,9 +625,17 @@ input:focus {
     z-index: 1;
   }
 
+.footer-wrapper {
+    position: absolute;
+    bottom: 0;
+
+    background-color: rgba(254, 254, 254, .9);
+}
 
 .footer-main {
-    /* margin-left: 40px; */
+    position: relative;
+    z-index: 1;
+
     width: 1200px;
     min-height: 120px;
 
