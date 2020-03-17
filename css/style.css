@@ -4,6 +4,7 @@ body {
     
     font-family: 'PT Sans', Arial, "sans-serif";
     text-transform: uppercase;    
+    background-color: #f2f2f2;
 }
 
 .page-wrapper {
@@ -59,9 +60,9 @@ a {
 .navigation {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     width: 1200px;
-    height: 56px;
+    min-height: 56px;
 
     margin: 0;
     padding: 0;
@@ -76,17 +77,26 @@ a {
 }
 
 .navigation-item {
-    width: 239px;
+    width: 25%;    
 }
 
+.navigation-item:first-child {
+  padding-left: 72px;
+}
+
+.navigation-item:last-child {
+  padding-right: 72px;
+}
+
+.navigation-item:first-child,
 .navigation-item:nth-child(2) {
     text-align: left;
 }
 
-.navigation-item:nth-child(3) {
+.navigation-item:nth-child(3),
+.navigation-item:nth-child(4) {
     text-align: right;
 }
-
 
 .sedona-logo {
     position: absolute;
@@ -569,6 +579,10 @@ input:focus {
 
 .map {
     margin-left: 40px;
+}
+
+.map-link {
+
 }
 
 .footer-main {
@@ -1069,6 +1083,7 @@ input[type="range"] {
 
 .accomodation-item h2 {
     margin: 0;
+    margin-top: -5px;
 }
 
 .accomodation-item h2:hover,

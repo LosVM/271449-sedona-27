@@ -9,7 +9,7 @@ if (popup) {
     popup.classList.toggle("modal-show");
 }
 
-button.addEventListener("click", function(evt) {
+button.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classlist.toggle("modal-show");    
+    popup.classList.toggle("modal-show");    
 });
