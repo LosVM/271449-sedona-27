@@ -578,12 +578,26 @@ input:focus {
 }
 
 .map {
-    margin-left: 40px;
-}
-
-.map-link {
-
-}
+    z-index: 0;
+    bottom: 122px;
+  
+    width: 1200px;
+    height: 593px;
+    min-height: 593px;
+    margin-bottom: -122px;
+  
+    background-color: #f2f2f2;
+  }
+  
+  .map-picture { 
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .map-link {
+    position: relative;
+    z-index: 1;
+  }
 
 .footer-main {
     margin: 0;
@@ -594,6 +608,7 @@ input:focus {
     background-color: #ffffff;
     color: #000000;
     text-align: center;
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, .2);
 }
 
 .footer-main a {
@@ -1092,7 +1107,7 @@ input[type="range"] {
 }
 
 .accomodation-item h2:active {
-     color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
    
 
@@ -1107,6 +1122,8 @@ input[type="range"] {
 }
 
 .accomodation-item-info {
+    display: flex;
+    flex-direction: column;
     width: 756px;
     min-height: 100px;
     margin: 0;
@@ -1117,14 +1134,14 @@ input[type="range"] {
     display: flex;
 }
 
-.details {
+.accomodation-type,
+.price {
     display: flex;
     flex-direction: column;
 }
 
 .price {
-    display: flex;
-    flex-direction: column;
+    padding-left: 10px;
 }
 
 .accomodation-value {
