@@ -7,14 +7,6 @@ body {
     background-color: #f2f2f2;
 }
 
-.page-wrapper {
-    width: 1200px;
-    margin: 0 40px;
-
-    background-color: #fff;
-    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, .2);
-}
-
 /* 
 img {
     max-width: 100%;
@@ -56,6 +48,14 @@ a {
     clip: rect(0 0 0 0);
     padding: 0;
 }
+
+.page-wrapper {
+    width: 1200px;
+    margin: 0 40px;
+
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, .2);
+}
     
 .navigation {
     display: flex;
@@ -94,7 +94,7 @@ a {
 }
 
 .navigation-item:nth-child(3),
-.navigation-item:nth-child(4) {
+.navigation-item:last-child {
     text-align: right;
 }
 
@@ -442,8 +442,7 @@ a {
 
 .calendar {
     position: absolute;
-    top: 0;
-    right: 0;
+    right: 55px;
 
     width: 38px;
     height: 38px;
@@ -455,6 +454,15 @@ a {
     background-color: transparent;
 }
 
+.calendar svg:hover,
+.calendar svg:focus {
+  fill: #000000;
+}
+
+.calendar svg:active {
+  fill: #81b3d2;
+}
+
 /*  
 .calendar-icon {
     background-image: url("../img/calendar.svg");
@@ -463,18 +471,11 @@ a {
     background-color: #cacaca;
 }
 */
-.date-in-section label {
-    width: 91px;
+.date-in-section label,
+.date-out-section label  {
+    width: 95px;
     height: 12px;
     
-    margin: 14px 21px 12px 0px;
-    padding: 0;
-}
-
-.date-out-section label {
-    width: 91px;
-    height: 12px;
-   
     margin: 14px 21px 12px 0px;
     padding: 0;
 }
@@ -591,6 +592,10 @@ input:focus {
 
 .find-hotels-button:active span {
     color: rgba(255, 255, 255, 0.3);
+}
+
+.map {
+    margin-left: 40px;
 }
 
 /*  
