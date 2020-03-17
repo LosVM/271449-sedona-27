@@ -1113,6 +1113,20 @@ input[type="range"] {
     padding: 30px 522px 30px 0px;
 }
 
+.accomodation-description {
+    display: flex;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
 .accomodation-value {
     display: flex;
     flex-direction: column; 
