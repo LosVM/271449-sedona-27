@@ -21,13 +21,6 @@ header {
     background-repeat: no-repeat;    
 }
 
-.background-filter {      
-    width: 1200px;
-
-    background-image: url(../img/filter-background.jpg); 
-    background-position: center;
-}
-
 .visually-hidden {
     position: absolute;
 
@@ -703,6 +696,13 @@ input:focus {
 
 /* Hotels page */
 
+.background-filter {      
+    width: 1200px;
+
+    background-image: url(../img/filter-background.jpg); 
+    background-position: center;
+}
+
 .form-hotels {
     display: flex;    
 
@@ -1095,6 +1095,32 @@ input[type="checkbox"]:checked+span {
     padding: 29px 72px 30px 0px;
 
     text-align: right;
+}
+
+.stars {
+    background-image: url("../img/star.svg");
+    background-repeat: space;
+}
+
+.four {
+    width: 89px;
+    height: 20px;
+
+    margin-left: 21px;
+}
+
+.three {
+    width: 65px;
+    height: 20px;
+
+    margin-left: 46px;
+}
+
+.four {
+    width: 41px;
+    height: 20px;
+
+    margin-left: 70px;
 }
 
 .accomodation-value span {
