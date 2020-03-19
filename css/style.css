@@ -156,7 +156,7 @@ header {
     line-height: 14px;
 }
 
-.features {
+.features ul {
     display: flex;
     flex-wrap: wrap;       
 }
@@ -1119,7 +1119,7 @@ input[type="checkbox"]:checked+span {
     margin-left: 46px;
 }
 
-.four {
+.two {
     width: 41px;
     height: 20px;
 
