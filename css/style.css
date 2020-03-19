@@ -608,6 +608,10 @@ input:focus {
     box-shadow: 0 5px 15px 0 rgba(0, 1, 1, .2);
 }
 
+.footer-contacts span {
+    padding-right: 55px;
+}
+
 .footer-main a {
     color: inherit;
 }
