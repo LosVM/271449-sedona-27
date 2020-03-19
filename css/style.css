@@ -156,10 +156,12 @@ header {
     line-height: 14px;
 }
 
-.features-list {
+.features {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;       
+}
 
+.features-list {    
     margin: 0;
     padding: 0;
   
@@ -290,23 +292,18 @@ header {
     margin: 0;    
 }
 
- .grey-container { 
-    display: flex;
-
-    width: 1200px;
-    height: 256px;
-
-    background-color:  #eeeeee;
-}
-
 .feature-territory {
+    box-sizing: border-box;    
+
     width: 400px;    
 
     margin: 0;    
-    padding: 50px 97px 63px 95px;        
-}
+    padding: 50px 97px 63px 95px;   
+   }
 
 .feature-road {   
+    box-sizing: border-box;     
+
     width: 400px;
     
     margin: 0;
@@ -314,10 +311,16 @@ header {
 }
 
 .feature-tourists {    
+    box-sizing: border-box;  
+
     width: 400px;
    
     margin: 0;
     padding: 50px 77px 64px 77px;       
+}
+
+.grey-bg {
+    background-color: #eeeeee;
 }
 
 .offer {   
