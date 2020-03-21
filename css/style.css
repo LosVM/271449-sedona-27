@@ -2,21 +2,26 @@ body {
     margin: 0px;
     padding: 0px;
 
-    font-family: 'PT Sans', Arial, "sans-serif";
+    font-family: "PT Sans", "Arial", "sans-serif";
     text-transform: uppercase;   
     
     background-color: #f2f2f2;
 }
 
- body ul {
-    list-style: none;
- }
-
- a {
+a {
     text-decoration: none;    
 }
 
-header {    
+.navigation,
+.features ul,
+.footer-social,
+.form-hotels ul,
+.results-of-search ul {
+    list-style: none;
+}
+
+.background-main {    
+    background-color: #808080;
     background-image: url("../img/background-main.jpg");    
     background-repeat: no-repeat;    
 }
@@ -57,7 +62,7 @@ header {
     line-height:  26px;
     font-weight: bold;
     color: #000000;
-    text-align: center; 
+    /* text-align: center;  */
     align-items: center;
 
     background-color: #ffffff;      
@@ -65,26 +70,30 @@ header {
     list-style: none; 
 }
 
-.navigation-item {
-    width: 25%;    
+.navigation li {
+    width: 25%;
 }
-
+  
+.navigation-item {    
+    box-sizing: border-box;
+}
+  
 .navigation-item:first-child {
-  padding-left: 72px;
+    padding-left: 72px;
+    text-align: left;
 }
-
-.navigation-item:last-child {
-  padding-right: 72px;
-}
-
-.navigation-item:first-child,
+  
 .navigation-item:nth-child(2) {
     text-align: left;
 }
-
+  
 .navigation-item:nth-child(3),
 .navigation-item:last-child {
-    text-align: right;
+    text-align: right;  
+}
+  
+.navigation-item:last-child {
+    padding-right: 72px;
 }
 
 .sedona-logo {
@@ -171,9 +180,11 @@ header {
     text-align: center;    
  }
 
+/*  
  .features-list ul {
     list-style: none;
  }
+*/
 
  .features-list h3 {
     font-size: 21px;
@@ -636,9 +647,7 @@ input:focus {
 
     width: 150px;
 
-    padding: 20px 215px 36px 0px;    
-
-    list-style: none;        
+    padding: 20px 215px 36px 0px;        
 }
 
 .footer-main ul {
@@ -649,7 +658,7 @@ input:focus {
 
     width: 150px;
 
-    list-style: none;
+    /* list-style: none; */
 }
 
 
@@ -703,9 +712,8 @@ input:focus {
 
 /* Hotels page */
 
-.background-filter {      
-    width: 1200px;
-
+.background-filter {          
+    background-color: #808080;
     background-image: url(../img/filter-background.jpg); 
     background-position: center;
 }
