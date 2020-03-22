@@ -258,7 +258,7 @@ a {
   }
   
 .feature-item h3 {
-    width: 156px;
+    width: 151px;
     
     margin: 0 auto;
 }
@@ -473,7 +473,7 @@ a {
 
 .offer h2 {    
     margin: 0;
-    padding: 57px 400px 36px 400px;
+    padding: 53px 400px 25px 400px;
 
     font-size: 30px;
     line-height: 36px;
@@ -490,15 +490,16 @@ a {
 }
 
 .hotels-search-button {
-    width: 568px;
-    height: 86px;
+    margin: 0 auto;
+    padding: 30px 138px;
    
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color: #ffffff;
+    text-transform: uppercase;
 
-    background-color: #766357;
+    background-color: #766357;    
 }
 
 .hotels-search-button:hover,
