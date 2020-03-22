@@ -483,7 +483,7 @@ a {
 
 .offer p {
     margin: 0;
-    padding: 0px 383px 40px 383px;
+    padding: 0px 350px 40px 350px;
 
     font-size: 14px;
     line-height: 24px;
@@ -541,6 +541,10 @@ a {
     100% {transform: scaleY(1) translateX(0);}
 }
 
+.modal-search-form p {
+    margin: 0;
+  }
+
 .modal-show {
     display: block;
 }
@@ -556,7 +560,7 @@ a {
     min-height: 38px;
     
     margin: 0;
-    padding: 55px 55px 29px 55px;
+    padding: 58px 55px 26px 55px;
 }
 
 .date-out-section {
@@ -565,7 +569,7 @@ a {
     width: 458px;
 
     margin: 0;
-    padding: 0px 55px 30px 55px;
+    padding: 0px 55px 25px 55px;
 }
 
 .calendar {
@@ -597,7 +601,7 @@ a {
     width: 95px;
     height: 12px;
     
-    margin: 14px 21px 12px 0px;
+    margin: 14px 21px 12px 2px;
     padding: 0;
 }
 
