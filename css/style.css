@@ -586,7 +586,7 @@ a {
   /*    height: 12px; */
   /* margin: 0; */
      margin-right: 5px;
-   }
+}
   
 .number-section {
     display: flex;
@@ -609,7 +609,7 @@ a {
   
 .children {
     display: flex;
-    
+
     width: 50%;
 }
   
