@@ -516,6 +516,9 @@ a {
 }
 
 .modal-search-form {
+    display: flex;
+    flex-wrap: wrap;
+
     position: absolute;
     z-index: 2;
     
@@ -552,7 +555,66 @@ a {
 .modal-hide {
     display: none;
 }
+/*  */
 
+.date-in-section {
+    display: flex;
+  /*   position: relative; */
+    width: 100%;
+
+    margin: 0;  
+    padding: 60px 52px 28px 58px;
+
+    align-items: center;
+}
+  
+.date-out-section {
+    display: flex;
+  
+    width: 100%;
+  /*   height: 38px; */
+  
+    margin: 0;      
+    padding: 0 51px 25px 57px;
+
+    align-items: center;
+}
+  
+  /* .date-in-section label, */
+  /* .date-out-section label { */
+     width: 105px;
+  /*    height: 12px; */
+  /* margin: 0; */
+     margin-right: 5px;
+   }
+  
+.number-section {
+    display: flex;
+
+    width: 100%;
+  /*   height: 38px; */
+    padding: 0px;
+
+    text-align: center;
+}
+  
+.adults {
+    display: flex;
+
+    width: 50%;
+
+    padding: 0 53px 54px 55px;
+  /*   text-align: center; */
+}
+  
+.children {
+    display: flex;
+    
+    width: 50%;
+}
+  
+
+/*  
 .date-in-section {
     display: flex;
 
@@ -572,6 +634,7 @@ a {
     padding: 0px 55px 25px 55px;
 }
 
+*/
 .calendar {
     position: absolute;
     right: 55px;
@@ -596,6 +659,7 @@ a {
   fill: #81b3d2;
 }
 
+/*  
 .date-in-section label,
 .date-out-section label  {
     width: 95px;
@@ -618,10 +682,19 @@ a {
 .number-section label {
     margin: 14px 41px 13px 0px;
 }
+*/
 
 input[type="text"] {
+    box-sizing: border-box;
+
     width: 346px;
     height: 38px;
+
+    margin-left: 20px;
+    padding-left: 13px;
+    
+    font-weight: bold;
+    text-transform: uppercase;
     
     background-color: #f2f2f2;   
 
@@ -629,6 +702,7 @@ input[type="text"] {
 }
 
 input[type="number"] {
+    box-sizing: border-box;
     width: 38px;
     height: 38px;
 
