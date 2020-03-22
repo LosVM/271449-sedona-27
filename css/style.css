@@ -633,12 +633,12 @@ input[type="text"] {
     border: none;
 }
 
-.adults{
+.adults {
     display: flex;
 
     width: 40%;
 
-    padding: 0px 0 54px 55px;
+    padding: 0px 17px 54px 55px;
 
     align-items: center;
 }
@@ -661,8 +661,11 @@ input[type="text"] {
 
 input[type="number"] {
     box-sizing: border-box;
+
     width: 38px;
     height: 38px;
+
+    padding-left: 10px;
 
     font-weight: bold;
     text-align: center;
@@ -691,10 +694,6 @@ input:focus {
 
     background-color: #f2f2f2;   
     border: none;
-}
-
-.plus-button {
-    margin-right: 20px;
 }
 
 .minus-button:hover,
@@ -792,7 +791,7 @@ input:focus {
     width: 232px;   
 
     margin: 0;
-    padding: 32px 169px 32px 132px;
+    padding: 32px 160px 32px 132px;
 
     text-align: left;
 
@@ -813,7 +812,7 @@ input:focus {
 
     width: 150px;
 
-    padding: 20px 230px 36px 0px;        
+    padding: 20px 227px 36px 0px;        
 }
 
 .footer-main ul {
