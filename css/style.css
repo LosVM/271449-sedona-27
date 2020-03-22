@@ -163,7 +163,7 @@ a {
     width: 459px;
     height: 353px;
 
-    margin: 76px 371px 22px 370px;
+    margin: 77px 371px 22px 370px;
 
     background-image: url("../img/welcome.png"); 
 }
@@ -177,7 +177,7 @@ a {
 
 .intro-section {
     width: 1200px;
-    min-height: 216px;
+    height: 215px;
 
     margin: 0;
     padding-bottom: 2px;
@@ -191,7 +191,7 @@ a {
 
 .intro-section p {
     margin: 0;
-    padding: 60px 378px 32px 378px;
+    padding: 60px 378px 30px 378px;
 
     font-size: 21px;
     line-height: 26px;
@@ -228,25 +228,62 @@ a {
  }
 */
 
- .features-list h3 {
+.features-list h3 {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;  
  }
 
- .feature-list p {
+.feature-list p {
     font-size: 14px;
     line-height: 21px;
     color: #000000;
- }
+}
 
+.feature-with-image {
+    display: flex;
+  
+    width: 1200px;
+    height: 256px;  
+
+    color: #ffffff; 
+    background-color: #81b3d2;     
+}
+  
+.feature-item {
+    width: 400px;
+
+    padding-top: 46px;
+    padding-bottom: 50px;
+}
+  
+.feature-item h3 {
+    width: 150px;
+  
+    margin: 0;
+  /*   padding-top: 46px; */
+    padding-left: 125px;
+    padding-bottom: 25px;
+  /*   text-align: center; */
+} 
+ 
+.feature-item p {
+    width: 277px; 
+
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 62px;
+  /* text-align: center; */      
+}
+  
+ /*  
 .hotel-feature { 
     display: flex;   
 
     width: 1200px;
 
     margin: 0;   
-    /* min-height: 256px;     */
+    min-height: 256px;     
 }
 
 .blue-bg {
@@ -268,7 +305,78 @@ a {
 
     margin: 0;
 }
+*/
 
+.icons-group {  
+    display: flex;  
+
+    height: 330px;
+
+    margin: 0px;
+    width: 1200px;    
+}
+
+.icons-group h3 {
+    margin: 0;
+  }
+  
+.icons-item {    
+    width: 400px;
+
+    margin: 0px;
+}
+
+.house-pict {
+    margin: 0;
+    padding: 60px 162px 23px 162px;    
+}
+
+.icons-description {
+    
+    width: 295px;
+
+    margin: 0;
+/*     padding: 0px 75px 50px 46px;     */
+    padding-left: 52px;
+}
+
+.icons-description p {
+    padding-top: 10px;
+}
+
+.burger {    
+    width: 400px;
+
+    margin: 0px;
+}
+
+.burger-pict {
+    margin: 0;
+    padding: 60px 160px 25px 162px;    
+}
+
+.souvenir {    
+    width: 400px;
+
+    margin: 0px;
+}
+
+.souvenir-pict {
+    margin: 0;
+/*     padding: 56px 150px 32px 162px;     */
+/*   padding-top: 56px; */
+/*   padding-left: auto; */
+/* padding-bottom: 23px; */
+    padding: 56px 0 23px 0;
+
+}
+
+.souvenir-description {
+    margin: 0;
+    padding: 0px 63px 86px 73px;    
+}
+
+/*  
 .icons-group {  
     display: flex;  
 
@@ -329,6 +437,8 @@ a {
     margin: 0;
     padding: 0px 63px 86px 73px;    
 }
+
+*/
 
 .feature-mountain {    
     display: flex;
