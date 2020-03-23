@@ -430,17 +430,16 @@ a {
     margin: 0;
 }
 
+.modal-show {
+    display: block;
+}
+
 .modal-hide {
     position: relative;
     z-index: 2;
   
     display: none;
 }
-
-.modal-show {
-    display: block;
-}
-
 
 .date-in-section {
     display: flex;
@@ -927,16 +926,23 @@ input[type='checkbox']:checked:disabled+span {
   
 .price-controls .min-price,
 .price-controls .max-price {
-    width: 80px;
-    padding-bottom: 30px;
+    position: relative;
 
+    width: 80px;
+
+    bottom: 3px;
+/*     padding-bottom: 30px; */
     padding-left: 65px;
 }
-  
+
+.price-controls .min-price input {
+    width: 23px;
+}
+
 .price-controls input {
-    width: 56px;
+    width: 50px;
     margin: 0;
-  
+    
     color: inherit;
     font: inherit;
   
@@ -1055,7 +1061,7 @@ input[type='checkbox']:checked:disabled+span {
 .filter-types {
     display: flex;
 
-    margin-right: 453px;
+    margin-right: 458px;
 }
   
 .filter-item {    
