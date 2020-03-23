@@ -1159,6 +1159,8 @@ input[type="checkbox"]:checked:focus + span {
   
 .filter-types {
     display: flex;
+
+    margin-right: 435px;
 }
   
 .filter-item {    
@@ -1202,7 +1204,7 @@ input[type="checkbox"]:checked:focus + span {
 .search-buttons {
     display: flex;
 
-    margin-left: 449px;
+    /* margin-left: 449px; */
 }
 
 .filter-button-up,
@@ -1255,6 +1257,8 @@ input[type="checkbox"]:checked:focus + span {
 }
 
 .accomodation-item h2 {
+    width: 220px;
+
     margin: 0;
 
     text-align: left;
@@ -1328,7 +1332,6 @@ input[type="checkbox"]:checked:focus + span {
 
     text-align: right;
 }
-
 
 .stars {
     background-image: url("../img/star.svg");
