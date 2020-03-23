@@ -896,6 +896,10 @@ input[type='checkbox']:checked:disabled+span {
     align-items: center;
 }  
 
+.price-controls input {
+    padding: 0;
+  /*   padding-bottom: 30px; */
+}
 
 .price-controls::after {
     content: "";
@@ -1029,15 +1033,15 @@ input[type='checkbox']:checked:disabled+span {
 .results-of-search {
     display: flex;
     align-items: baseline;
-  
-  
+    
     padding: 25px 71px;
+    padding-right: 60px;
     font-size: 12px; 
 }
   
 .results-of-search h2 {
     margin: 0;
-    padding-right: 48px;
+    padding-right: 43px;
   
     font-size: 21px;
     font-weight: bold;
@@ -1051,7 +1055,7 @@ input[type='checkbox']:checked:disabled+span {
 .filter-types {
     display: flex;
 
-    margin-right: 435px;
+    margin-right: 453px;
 }
   
 .filter-item {    
