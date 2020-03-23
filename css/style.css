@@ -924,6 +924,8 @@ input:focus {
    
     margin: 0;
     padding: 31px 85px 31px 72px;    
+
+    border: none;
 }
 
 
