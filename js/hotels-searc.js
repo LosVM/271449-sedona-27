@@ -1,4 +1,4 @@
-var popup = document.querySelector(".form-main"); 
+var popup = document.querySelector(".modal-hide"); 
    
 if (popup) {
   popup.classList.toggle("modal-show");

@@ -430,7 +430,7 @@ a {
     margin: 0;
 }
 
-.form-main {
+.modal-hide {
     position: relative;
     z-index: 2;
   
@@ -441,9 +441,6 @@ a {
     display: block;
 }
 
-.modal-hide {
-    display: none;
-}
 
 .date-in-section {
     display: flex;
@@ -759,7 +756,7 @@ input:focus {
 .background-filter {          
     background-color: #808080;
     background-image: url(../img/filter-background.jpg); 
-    background-position: center;
+    background-position: 0 -235px;
 }
 
 .navigation-item .current-page:hover {
@@ -803,7 +800,7 @@ input:focus {
     width: 170px;
    
     margin: 0;
-    padding: 31px 85px 31px 72px;    
+    padding: 30px 85px 31px 72px;    
 
     border: none;
 }
@@ -830,27 +827,48 @@ input[type="checkbox"]:checked+span {
     background-position: left;
 }
 
-input[type="checkbox"]:focus + span {
+input[type="checkbox"]:focus+span {
     outline: 2px solid  #81b3d2;
 }
   
-input[type="checkbox"]:checked:focus + span {
+input[type="checkbox"]:checked:focus+span {
     outline: 2px solid  #81b3d2;
 }
+
+input[type="checkbox"]:disabled+span {
+    position: absolute;
+   
+    width: 27px;
+    height: 23px;
     
+    background-image: url("../img/checkbox-off-3.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+    
+input[type='checkbox']:checked:disabled+span {
+    position: absolute;
+   
+    width: 27px;
+    height: 23px;
+    
+    background-image: url("../img/checkbox-on-2.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
 
 .category-filter {
     width: 136px;
 
     margin: 0;
-    padding: 31px 349px 31px 0px;   
+    padding: 29px 349px 31px 0px;   
     border: none;  
 }
 
 .filter-range {
     width: 320px;   
     
-    padding-top: 27px;
+    padding-top: 28px;
 
     color: #ffffff;
     /* text-transform: uppercase; */
@@ -912,7 +930,7 @@ input[type="checkbox"]:checked:focus + span {
 }
   
 .price-controls input {
-    width: 50px;
+    width: 56px;
     margin: 0;
   
     color: inherit;
@@ -986,13 +1004,13 @@ input[type="checkbox"]:checked:focus + span {
 .btn-transparent {
     display: block;
 
-    margin: 0 auto;
+    margin: 0 82px;
     padding: 6px 35px;
   
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
   
     background: transparent;
 
