@@ -885,6 +885,10 @@ input:focus {
     background-position: center;
 }
 
+.current-page {
+    color: #766357;
+}
+
 .form-hotels {
     display: flex;    
 
@@ -927,7 +931,6 @@ input:focus {
 
     border: none;
 }
-
 
 input[type="checkbox"]+span {
     position: absolute;   
@@ -1195,7 +1198,7 @@ input[type="checkbox"]:checked:focus + span {
 
 .search-buttons {
     display: flex;
-    
+
     margin-left: 440px;
 }
 
