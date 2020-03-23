@@ -508,6 +508,7 @@ a {
 }
 
 .hotels-search-button:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color: #503e33;
 }
 
@@ -678,6 +679,7 @@ input:hover {
 }
 
 input:focus {
+    border: 2px solid #e5e5e5;
     background-color: #ffffff;
 }
 
@@ -894,13 +896,12 @@ input:focus {
 
 .form-hotels ul {    
     padding: 0;
-    margin-top: -23px;
-
-    list-style: none;
+    margin-top: -25px;
+    margin-bottom: 4px;
 }
 
 .form-hotels li {
-    padding-top: 15px;
+    padding-top: 22px;
 }
 
 .form-hotels legend {    
@@ -919,13 +920,12 @@ input:focus {
 }
 
 .infrastructure-filter {
-    width: 139px;
+    width: 170px;
    
     margin: 0;
-    padding: 31px 115px 31px 72px;
-
-    border: none;     
+    padding: 31px 85px 31px 72px;    
 }
+
 
 input[type="checkbox"]+span {
     position: absolute;   
@@ -958,7 +958,7 @@ input[type="checkbox"]:checked+span {
 }
 
 .filter-range {
-    width: 330px;   
+    width: 320px;   
     
     padding-top: 27px;
 
@@ -967,7 +967,7 @@ input[type="checkbox"]:checked+span {
 }
   
 .filter-range-title {
-    margin-bottom: 9px;
+    margin-bottom: 13px;
       
     font-size: 16px;
     line-height: 21px;
@@ -977,7 +977,7 @@ input[type="checkbox"]:checked+span {
 .price-controls {
     position: relative;
     
-    height: 36px;
+    height: 32px;
 
     margin-bottom: 20px;
     
@@ -985,7 +985,9 @@ input[type="checkbox"]:checked+span {
   
     border: 2px solid #ffffff;
     border-radius: 2px;
+    align-items: center;
 }  
+
 
 .price-controls::after {
     content: "";
@@ -1013,7 +1015,8 @@ input[type="checkbox"]:checked+span {
   
 .price-controls .min-price,
 .price-controls .max-price {
-    width: 90px;
+    width: 80px;
+    padding-bottom: 30px;
 
     padding-left: 65px;
 }
@@ -1046,6 +1049,21 @@ input[type="checkbox"]:checked+span {
     height: 2px;
   
     background: #ffffff;
+}
+  
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    
+    width: 4px;
+    height: 4px;
+  
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+
+    cursor: pointer;
 }
   
 .range-toggle {
@@ -1102,70 +1120,66 @@ input[type="checkbox"]:checked+span {
 
 .results-of-search {
     display: flex;
-
-    width: 1200px;
-    height: 86px;            
+    align-items: baseline;
+  
+  
+    padding: 25px 71px;
+    font-size: 12px; 
 }
-
+  
 .results-of-search h2 {
-    width: 145px;    
-
     margin: 0;
-    padding: 31px 49px 33px 72px;
-
+    padding-right: 48px;
+  
     font-size: 21px;
-    line-height: 26px;
     font-weight: bold;
+    line-height: 1.24;
 }
-
-.results-of-search span {
-    margin: 0;
-    padding: 41px 40px 37px 0;    
-      
-    font-size: 12px;
-    line-height: 18px;
+  
+.filter-types {
+    display: flex;
+}
+  
+.filter-item {    
+    padding-right: 36px;
+}
+  
+.filter-item a { 
+    text-decoration: underline;
+  
+    opacity: 0.3;  
+    color: rgba(0, 0, 0, .3);
+  /*   border-bottom: 1px dashed rgba(0, 0, 0, 0.3);   */
+  
+    text-decoration-style: dashed;
+}
+  
+.filter-item a:hover {
+    text-decoration: underline;
+  
+    opacity: 1;
+    color: #81b3d2;
+  
+    text-decoration-style: dashed;
+    text-decoration-color: #81b3d2;
+  }
+  
+.filter-item a:active {
+    text-decoration: none;
+  
+    opacity: 1;
     color: #000000;
 }
-
-.results-of-search ul {
-    width: 694px;
-
-    margin: 0;
-    padding: 41px 100px 41px 40px;
-
-    list-style: none;
-}
-
-.results-of-search ul li {
-    display: inline;
-}
-
-.results-of-search li:hover {
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);    
-}
-
-.filter-option {
-    margin: 0;
-    padding: 41px 33px 37px 0px;    
-
-    font-size: 12px;
-    line-height: 18px;
-    color: rgba(0, 0, 0, 0.3);      
-}
-
-.filter-option:focus,
-.filter-option:hover {
-    color: #81b3d2;   
-}
-
-.filter-option:active {
-    color: #000000;
+  
+.filter-item a:focus {
+    text-decoration: none;
+  
+    opacity: 1;
+    color: #81b3d2;
 }
 
 .search-buttons {
-    width: 73px;
-
-    padding: 39px 73px 37px 0px;
+    margin-left: 459px;
 }
 
 .filter-button-up,
@@ -1191,8 +1205,7 @@ input[type="checkbox"]:checked+span {
 }
 
 .hotels-container {    
-    width: 1200px;
-    min-height: 453px;
+    width: 1200px;    
 }
 
 .hotels-container h2 {
@@ -1209,6 +1222,7 @@ input[type="checkbox"]:checked+span {
 .accomodation-item {
     display: flex;
 
+    height: 150px;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: #f2f2f2;
@@ -1216,7 +1230,7 @@ input[type="checkbox"]:checked+span {
 
 .accomodation-item h2 {
     margin: 0;
-    margin-top: -5px;
+/*     margin-top: -5px; */
 }
 
 .accomodation-item h2:hover,
@@ -1229,13 +1243,14 @@ input[type="checkbox"]:checked+span {
 }
    
 .hotel-info {
-    min-height: 151px;
     width: 1200px;
 }
 
-.accomodation-picture {
+.accomodation-picture { 
+    /* height: 90px; */
+
     margin: 0;
-    padding: 30px 30px 30px 72px;
+    padding: 29px 29px 10px 72px;
 }
 
 .accomodation-item-info {
@@ -1243,10 +1258,10 @@ input[type="checkbox"]:checked+span {
     flex-direction: column;
 
     width: 756px;
-    min-height: 100px;
+
 
     margin: 0;
-    padding: 30px 522px 30px 0px;
+    padding: 23px 522px 30px 0px;
 }
 
 .accomodation-description {
@@ -1259,8 +1274,18 @@ input[type="checkbox"]:checked+span {
     flex-direction: column;
 }
 
+.accomodation-type p {
+  margin-top: 5px;
+  margin-bottom: 17px;
+}
+
 .price {
     padding-left: 10px;
+}
+
+.price p {
+  margin-top: 5px;
+  margin-bottom: 17px;
 }
 
 .accomodation-value {
@@ -1269,13 +1294,14 @@ input[type="checkbox"]:checked+span {
     justify-content: space-between;
 
     width: 322px;
-    min-height: 100px;
+/*     min-height: 100px; */
 
     margin: 0;
     padding: 29px 72px 30px 0px;
 
     text-align: right;
 }
+
 
 .stars {
     background-image: url("../img/star.svg");
