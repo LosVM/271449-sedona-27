@@ -1137,6 +1137,10 @@ input[type="checkbox"]:checked+span {
     font-weight: bold;
     line-height: 1.24;
 }
+
+.results-of-search span {
+    padding-left: 5px;
+}
   
 .filter-types {
     display: flex;
