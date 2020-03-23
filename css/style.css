@@ -547,16 +547,16 @@ a {
 
 .modal-search-form p {
     margin: 0;
-  }
+}
 
+/*  
 .modal-show {
     display: block;
 }
-
+*/
 .modal-hide {
     display: none;
 }
-/*  */
 
 .date-in-section {
     display: flex;
@@ -1181,7 +1181,7 @@ input[type="checkbox"]:checked+span {
 }
 
 .search-buttons {
-    margin-left: 459px;
+    margin-left: 440px;
 }
 
 .filter-button-up,
