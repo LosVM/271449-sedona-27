@@ -90,55 +90,6 @@ a {
     text-align: right;
 }
  
-/*  
-.navigation {
-    display: flex;
-        
-    width: 1200px;
-    min-height: 56px;
-
-    margin: 0;
-    padding: 0;
-
-    font-size: 14px;
-    line-height:  26px;
-    font-weight: bold;
-    color: #000000;
-    text-align: center; 
-    align-items: center;
-
-    background-color: #ffffff;      
-    
-    list-style: none; 
-}
-
-.navigation li {
-    width: 25%;
-}
-  
-.navigation-item {    
-    box-sizing: border-box;
-}
-  
-.navigation-item:first-child {
-    padding-left: 72px;
-    text-align: left;
-}
-  
-.navigation-item:nth-child(2) {
-    text-align: left;
-}
-  
-.navigation-item:nth-child(3),
-.navigation-item:last-child {
-    text-align: right;  
-}
-  
-.navigation-item:last-child {
-    padding-right: 72px;
-}
-*/
-
 .sedona-logo {
     position: absolute;
     z-index: 1;
@@ -222,12 +173,6 @@ a {
     text-align: center;    
  }
 
-/*  
- .features-list ul {
-    list-style: none;
- }
-*/
-
 .features-list h3 {
     font-size: 21px;
     line-height: 21px;
@@ -305,8 +250,7 @@ a {
     padding: 60px 162px 23px 162px;    
 }
 
-.icons-description {
-    
+.icons-description {    
     width: 295px;
 
     margin: 0;
@@ -341,82 +285,13 @@ a {
 
 .souvenir-pict {
     margin: 0;
-/*     padding: 56px 150px 32px 162px;     */
-/*   padding-top: 56px; */
-/*   padding-left: auto; */
-/* padding-bottom: 23px; */
     padding: 56px 0 23px 0;
-
 }
 
 .souvenir-description {
     margin: 0;
     padding: 0px 63px 86px 73px;    
 }
-
-/*  
-.icons-group {  
-    display: flex;  
-
-    height: 330px;
-
-    margin: 0px;
-    width: 1200px;    
-}
-
-.icons-group h3 {
-    margin: 0;
-  }
-  
-.house {    
-    width: 400px;
-
-    margin: 0px;
-}
-
-.house-pict {
-    margin: 0;
-    padding: 62px 163px 29px 162px;    
-}
-
-.house-description {
-    margin: 0;
-    padding: 0px 75px 85px 73px;    
-}
-
-.burger {    
-    width: 400px;
-
-    margin: 0px;
-}
-
-.burger-pict {
-    margin: 0;
-    padding: 62px 163px 32px 163px;   
-}
-
-.burger-description {
-    margin: 0px;
-    padding: 0px 58px 87px 58px;    
-}
-
-.souvenir {    
-    width: 400px;
-
-    margin: 0px;
-}
-
-.souvenir-pict {
-    margin: 0;
-    padding: 56px 150px 32px 162px;    
-}
-
-.souvenir-description {
-    margin: 0;
-    padding: 0px 63px 86px 73px;    
-}
-
-*/
 
 .feature-mountain {    
     display: flex;
@@ -440,7 +315,7 @@ a {
 
     margin: 0;    
     padding: 50px 97px 63px 95px;   
-   }
+}
 
 .feature-road {   
     box-sizing: border-box;     
@@ -584,18 +459,6 @@ a {
 
     align-items: center;
 }
-  
-  /* 
-.number-section {
-    display: flex;
-
-    width: 100%;
- 
-    padding: 0px 53px 54px 55px;
-
-    align-items: center;
-}
-  */
 
 .calendar {
     position: absolute;
@@ -755,17 +618,17 @@ input:focus {
     margin-bottom: -122px;
   
     background-color: #f2f2f2;
-  }
+}
   
 .map-picture { 
     position: absolute;
     z-index: 0;
-  }
+}
   
 .map-link {
     position: relative;
     z-index: 1;
-  }
+}
 
 .footer-wrapper {
     position: absolute;
@@ -1185,7 +1048,7 @@ input[type="checkbox"]:checked:focus + span {
   
     text-decoration-style: dashed;
     text-decoration-color: #81b3d2;
-  }
+}
   
 .filter-item a:active {
     text-decoration: none;
@@ -1257,7 +1120,7 @@ input[type="checkbox"]:checked:focus + span {
 }
 
 .accomodation-item h2 {
-    width: 220px;
+    width: 260px;
 
     margin: 0;
 
@@ -1289,7 +1152,6 @@ input[type="checkbox"]:checked:focus + span {
     flex-direction: column;
 
     width: 756px;
-
 
     margin: 0;
     padding: 23px 522px 30px 0px;
