@@ -378,7 +378,9 @@ a {
     color: #ffffff;
     text-transform: uppercase;
 
-    background-color: #766357;    
+    background-color: #766357;   
+
+    border: none; 
 }
 
 .hotels-search-button:hover,
@@ -428,11 +430,17 @@ a {
     margin: 0;
 }
 
-/*  
+.form-main {
+    position: relative;
+    z-index: 2;
+  
+    display: none;
+}
+
 .modal-show {
     display: block;
 }
-*/
+
 .modal-hide {
     display: none;
 }
@@ -592,7 +600,9 @@ input:focus {
     text-transform: uppercase;
     text-align: center;
 
-    background-color: #81b3d2;    
+    background-color: #81b3d2; 
+    
+    border: none;
 }
 
 .find-hotels-button:hover,
