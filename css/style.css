@@ -778,7 +778,7 @@ input:focus {
 }
 
 .form-hotels li {
-    padding-top: 22px;
+    padding-top: 22.5px;
 }
 
 .form-hotels legend {    
@@ -1144,7 +1144,7 @@ input[type='checkbox']:checked:disabled+span {
 .accomodation-item {
     display: flex;
 
-    height: 150px;
+    height: 149px;
 
     border-top: 1px solid;
     border-bottom: 1px solid;
@@ -1176,7 +1176,7 @@ input[type='checkbox']:checked:disabled+span {
     /* height: 90px; */
 
     margin: 0;
-    padding: 29px 29px 10px 72px;
+    padding: 27px 29px 10px 72px;
 }
 
 .accomodation-item-info {
@@ -1186,7 +1186,7 @@ input[type='checkbox']:checked:disabled+span {
     width: 756px;
 
     margin: 0;
-    padding: 23px 522px 30px 0px;
+    padding: 21px 522px 30px 0px;
 }
 
 .accomodation-description {
@@ -1199,13 +1199,17 @@ input[type='checkbox']:checked:disabled+span {
     flex-direction: column;
 }
 
+.accomodation-type {
+    margin-left: 2px;
+}
+
 .accomodation-type p {
   margin-top: 5px;
   margin-bottom: 17px;
 }
 
 .price {
-    padding-left: 10px;
+    padding-left: 7px;
 }
 
 .price p {
@@ -1222,7 +1226,7 @@ input[type='checkbox']:checked:disabled+span {
 /*     min-height: 100px; */
 
     margin: 0;
-    padding: 29px 72px 30px 0px;
+    padding: 29px 72px 32px 0px;
 
     text-align: right;
 }
@@ -1305,4 +1309,8 @@ input[type='checkbox']:checked:disabled+span {
     background-color: #503e33;
 
     color: rgba(255, 255, 255, 0.3);
+}
+
+.accomodation-item:last-child {
+    margin-bottom: -5px;
 }
