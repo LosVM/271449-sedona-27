@@ -430,15 +430,15 @@ a {
     margin: 0;
 }
 
-.modal-show {
-    display: block;
-}
-
 .modal-hide {
     position: relative;
     z-index: 2;
   
     display: none;
+}
+
+.modal-show {
+    display: block;
 }
 
 .date-in-section {
@@ -1001,6 +1001,8 @@ input[type='checkbox']:checked:disabled+span {
   
 .range-toggle:hover {
     background: #1c4f80;
+
+    transform: scale(1.1);
 }
   
 .range-toggle-min {
@@ -1061,7 +1063,7 @@ input[type='checkbox']:checked:disabled+span {
 .filter-types {
     display: flex;
 
-    margin-right: 458px;
+    margin-right: 448px;
 }
   
 .filter-item {    
@@ -1105,7 +1107,7 @@ input[type='checkbox']:checked:disabled+span {
 .search-buttons {
     display: flex;
 
-    /* margin-left: 449px; */
+    margin-right: 10px;
 }
 
 .filter-button-up,
