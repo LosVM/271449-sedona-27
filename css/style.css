@@ -1042,7 +1042,7 @@ input[type='checkbox']:checked:disabled+span {
     align-items: baseline;
     
     padding: 25px 71px;
-    padding-right: 60px;
+    padding-right: 65px;
     font-size: 12px; 
 }
   
@@ -1060,9 +1060,7 @@ input[type='checkbox']:checked:disabled+span {
 }
   
 .filter-types {
-    display: flex;
-
-    margin-right: 448px;
+    display: flex;  
 }
   
 .filter-item {    
@@ -1106,7 +1104,7 @@ input[type='checkbox']:checked:disabled+span {
 .search-buttons {
     display: flex;
 
-    margin-right: 10px;
+    margin-left: auto;
 }
 
 .filter-button-up,
